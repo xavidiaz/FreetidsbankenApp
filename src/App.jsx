@@ -1,0 +1,43 @@
+import { Routes, Route, Link } from 'react-router-dom';
+import UsersPage from '@/pages/UsersPage';
+import UserDetailPage from '@/pages/UserDetailPage';
+import ItemsPage from '@/pages/ItemsPage';
+import ItemDetailPage from '@/pages/ItemDetailPage';
+import LoansPage from '@/pages/LoansPage';
+import LoanDetailPage from '@/pages/LoanDetailPage';
+import ReviewsPage from '@/pages/ReviewsPage';
+import ReviewDetailPage from '@/pages/ReviewDetailPage';
+import CategoriesPage from '@/pages/CategoriesPage';
+import CategoryDetailPage from '@/pages/CategoryDetailPage';
+
+const App = () => {
+  return (
+    <>
+      <nav>
+        <ul>
+          <li><Link to="/users">Users</Link></li>
+          <li><Link to="/items">Items</Link></li>
+          <li><Link to="/loans">Loans</Link></li>
+          <li><Link to="/reviews">Reviews</Link></li>
+          <li><Link to="/categories">Categories</Link></li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/users" element={<UsersPage />} />
+        <Route path="/users/:id" element={<UserDetailPage />} />
+        <Route path="/items" element={<ItemsPage />} />
+        <Route path="/items/:id" element={<ItemDetailPage />} />
+        <Route path="/loans" element={<LoansPage />} />
+        <Route path="/loans/:id" element={<LoanDetailPage />} />
+        <Route path="/reviews" element={<ReviewsPage />} />
+        <Route path="/reviews/:id" element={<ReviewDetailPage />} />
+        <Route path="/categories" element={<CategoriesPage />} />
+        <Route path="/categories/:id" element={<CategoryDetailPage />} />
+        <Route path="*" element={<h1>Not Found</h1>} />
+      </Routes>
+    </>
+  );
+};
+
+export default App;

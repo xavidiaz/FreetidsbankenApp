@@ -1,0 +1,270 @@
+{
+    "Users": [
+        {
+            "user_id": 1,
+            "name": "Alice",
+            "email": "alice@example.com",
+            "phone": 9708996313,
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=8007",
+            "booking_history": [
+                {
+                    "booking_id": 1,
+                    "item_id": 5,
+                    "date_start": "2024-12-04",
+                    "date_end": "2024-12-23",
+                    "shop_id": 1,
+                    "status": "Completed"
+                }
+            ],
+            "reviews": [
+                1
+            ],
+            "preferred_shop": 2,
+            "loans": [
+                1,
+                2
+            ]
+        }
+    ],
+    "Shops": [
+        {
+            "shop_id": 1,
+            "name": "Fritidsbanken S\u00f6dert\u00e4lje",
+            "latitude": 59.1955,
+            "longitude": 17.6253
+        },
+        {
+            "shop_id": 2,
+            "name": "Fritidsbanken M\u00e4rsta",
+            "latitude": 59.6216,
+            "longitude": 17.8547
+        },
+        {
+            "shop_id": 3,
+            "name": "Fritidsbanken Uppsala",
+            "latitude": 59.8586,
+            "longitude": 17.6389
+        }
+    ],
+    "Categories": [
+        {
+            "category_id": 1,
+            "name": "Football"
+        },
+        {
+            "category_id": 2,
+            "name": "Basketball"
+        },
+        {
+            "category_id": 3,
+            "name": "Tennis"
+        },
+        {
+            "category_id": 4,
+            "name": "Running"
+        },
+        {
+            "category_id": 5,
+            "name": "Cycling"
+        }
+    ],
+    "Items": [
+        {
+            "item_id": 1,
+            "name": "Basketball Gear 1",
+            "description": "High-quality Basketball gear.",
+            "category_id": 2,
+            "stock_quantity": 10,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/9560/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8862/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7782/pexels-photo.jpg"
+            ],
+            "reviews": [
+                11
+            ],
+            "dates_reserved": [
+                [
+                    "2025-01-12",
+                    "2025-01-21"
+                ]
+            ]
+        },
+        {
+            "item_id": 2,
+            "name": "Basketball Gear 2",
+            "description": "Durable and lightweight basketball gear.",
+            "category_id": 2,
+            "stock_quantity": 8,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/3652/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/12345/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6789/pexels-photo.jpg"
+            ],
+            "reviews": [
+                12,
+                15
+            ],
+            "dates_reserved": [
+                [
+                    "2025-02-01",
+                    "2025-02-10"
+                ]
+            ]
+        },
+        {
+            "item_id": 3,
+            "name": "Football Cleats",
+            "description": "Professional football cleats for enhanced grip.",
+            "category_id": 1,
+            "stock_quantity": 15,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/10545/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9987/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3321/pexels-photo.jpg"
+            ],
+            "reviews": [
+                9
+            ],
+            "dates_reserved": [
+                [
+                    "2025-03-05",
+                    "2025-03-15"
+                ]
+            ]
+        },
+        {
+            "item_id": 4,
+            "name": "Tennis Racket",
+            "description": "Lightweight tennis racket for improved swing control.",
+            "category_id": 3,
+            "stock_quantity": 5,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/4475/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8874/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5551/pexels-photo.jpg"
+            ],
+            "reviews": [
+                6,
+                13
+            ],
+            "dates_reserved": [
+                [
+                    "2025-02-15",
+                    "2025-02-20"
+                ]
+            ]
+        },
+        {
+            "item_id": 5,
+            "name": "Running Shoes",
+            "description": "Comfortable running shoes with superior cushioning.",
+            "category_id": 4,
+            "stock_quantity": 20,
+            "shop_id": 4,
+            "thumbnail": "https://images.pexels.com/photos/19042/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3434/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8733/pexels-photo.jpg"
+            ],
+            "reviews": [
+                3,
+                14
+            ],
+            "dates_reserved": [
+                [
+                    "2025-04-10",
+                    "2025-04-25"
+                ]
+            ]
+        },
+        {
+            "item_id": 6,
+            "name": "Cycling Helmet",
+            "description": "Advanced cycling helmet with high-impact resistance.",
+            "category_id": 5,
+            "stock_quantity": 12,
+            "shop_id": 5,
+            "thumbnail": "https://images.pexels.com/photos/5421/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7392/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6451/pexels-photo.jpg"
+            ],
+            "reviews": [
+                8
+            ],
+            "dates_reserved": [
+                [
+                    "2025-01-22",
+                    "2025-01-30"
+                ]
+            ]
+        }
+    ],
+    "Reviews": [
+        {
+            "review_id": 1,
+            "user_id": 9,
+            "item_id": 12,
+            "rating": 5,
+            "comment": "Review comment 1",
+            "date": "2024-12-23"
+        },
+        {
+            "review_id": 2,
+            "user_id": 12,
+            "item_id": 11,
+            "rating": 5,
+            "comment": "Review comment 2",
+            "date": "2024-12-10"
+        },
+        {
+            "review_id": 3,
+            "user_id": 7,
+            "item_id": 6,
+            "rating": 4,
+            "comment": "Review comment 3",
+            "date": "2024-12-10"
+        },
+        {
+            "review_id": 4,
+            "user_id": 4,
+            "item_id": 15,
+            "rating": 4,
+            "comment": "Review comment 4",
+            "date": "2024-12-25"
+        },
+        {
+            "review_id": 5,
+            "user_id": 12,
+            "item_id": 2,
+            "rating": 1,
+            "comment": "Review comment 5",
+            "date": "2024-12-19"
+        }
+    ],
+    "Loans": [
+        {
+            "loan_id": 1,
+            "user_id": 1,
+            "item_id": 3,
+            "shop_id": 2,
+            "date_start": "2025-01-05",
+            "date_end": "2025-01-15",
+            "status": "Active"
+        },
+        {
+            "loan_id": 2,
+            "user_id": 1,
+            "item_id": 5,
+            "shop_id": 1,
+            "date_start": "2024-12-20",
+            "date_end": "2025-01-02",
+            "status": "Completed"
+        }
+    ]
+}
