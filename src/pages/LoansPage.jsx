@@ -1,27 +1,29 @@
-import { useLoansStore } from '@/store/useFreetidsbanken';
-import FilterInputComponent from '@/components/FilterInputComponent';
-import PageLayout from '@/Layouts/PageLayout';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { useLoansStore } from "@/store/useFreetidsbanken";
+import { useDateRangeStore } from "@/store/useDateRangeStore";
+import DateRangePicker from "@/components/DateRangePicker";
+import PageLayout from "@/Layouts/PageLayout";
 
 const LoansPage = () => {
     const loansStore = useLoansStore();
+    const { startDate, endDate } = useDateRangeStore();
+
+    // 🔹 Filter loans by selected date range
+    const filteredLoans = loansStore.getAll().filter(loan =>
+        (!startDate || loan.date_start >= startDate) &&
+        (!endDate || loan.date_end <= endDate)
+    );
 
     return (
         <>
-            <FilterInputComponent placeholder="Search Loans..." store={useLoansStore} filterKey="user_id" />
+            <h1>Loans</h1>
+            <DateRangePicker />
             <PageLayout
                 title="Loans"
-                data={loansStore.getFiltered()}
+                data={filteredLoans}
                 renderItem={(loan) => (
-                    loan.loan_id ? ( // ✅ Ensure loan_id exists
-                        <li key={loan.loan_id}>
-                            <Link to={`/loans/${loan.loan_id}`}>
-                                Loan #{loan.loan_id} - Status: {loan.status}
-                            </Link>
-                        </li>
-                    ) : (
-                        <li key={Math.random()}>Invalid Loan Data</li> // 🚨 Catch undefined loans
-                    )
+                    <>
+                        Loan #{loan.loan_id} - Status: {loan.status} - {loan.date_start} → {loan.date_end}
+                    </>
                 )}
                 entity="loans"
             />

@@ -12,10 +12,14 @@ import CategoriesPage from '@/pages/CategoriesPage';
 import CategoryDetailPage from '@/pages/CategoryDetailPage';
 import UserButton from "@/components/UserButton";
 import CartPage from '@/pages/CartPage';
+import CheckoutSuccessPage from '@/pages/CheckoutSuccessPage';
 import { useCartStore } from '@/store/useCartStore';
+
 
 const App = () => {
   const cartStore = useCartStore();
+  const totalItems = cartStore.getTotalItems(); // ✅ Call as a function
+
   return (
     <>
       <nav>
@@ -25,7 +29,7 @@ const App = () => {
           <li><Link to="/loans">Loans</Link></li>
           <li><Link to="/reviews">Reviews</Link></li>
           <li><Link to="/categories">Categories</Link></li>
-          <li><Link to="/cart">🛒 Cart ({cartStore.getTotalItems()})</Link></li>
+          <li><Link to="/cart">🛒 Cart ({totalItems})</Link></li>
           <UserButton /> {/* User profile & login/logout button */}
         </ul>
       </nav>
@@ -43,6 +47,7 @@ const App = () => {
         <Route path="/categories" element={<CategoriesPage />} />
         <Route path="/categories/:id" element={<CategoryDetailPage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout-success/:loanId" element={<CheckoutSuccessPage />} />
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </>

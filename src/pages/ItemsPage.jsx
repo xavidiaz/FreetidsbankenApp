@@ -2,6 +2,7 @@ import { useItemsStore, useReviewsStore } from '@/store/useFreetidsbanken';
 import { useCartStore } from '@/store/useCartStore';
 import FilterInputComponent from '@/components/FilterInputComponent';
 import PageLayout from '@/Layouts/PageLayout';
+import AddToCartButton from '@/components/AddToCartButton';
 import { Link } from 'react-router-dom';
 
 const ItemsPage = () => {
@@ -28,7 +29,7 @@ const ItemsPage = () => {
                 title="Items"
                 data={itemsStore.getFiltered()}
                 renderItem={(item) => (
-                    <div key={item.item_id} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                         <img src={item.thumbnail} alt={item.name} width={50} height={50} style={{ borderRadius: '5px' }} />
                         <div>
                             <Link to={`/items/${item.item_id}`} style={{ fontWeight: 'bold', textDecoration: 'none' }}>
@@ -36,11 +37,12 @@ const ItemsPage = () => {
                             </Link>
                             <p style={{ margin: 0, fontSize: '0.9em' }}>⭐ {getAverageRating(item)}</p>
                         </div>
-                        <button onClick={() => cartStore.addToCart(item)}>Add to Cart</button>
+                        <AddToCartButton item={item} />
                     </div>
                 )}
                 entity="items"
             />
+
 
         </>
     );

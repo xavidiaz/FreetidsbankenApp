@@ -3,12 +3,16 @@ const PageLayout = ({ title, data, renderItem, entity }) => {
         <div>
             <h1>{title}</h1>
             <ul>
-                {data.map((item) => (
-                    <li key={item.id}>
-                        {renderItem(item)} {/* No automatic <Link> wrapping */}
-                    </li>
-                ))}
+                {data.map((item) => {
+                    const itemId = item.item_id || item.user_id || item.loan_id || item.review_id || item.category_id;
+                    return (
+                        <li key={itemId}> {/* ✅ Uses correct ID based on entity type */}
+                            {renderItem(item)}
+                        </li>
+                    );
+                })}
             </ul>
+
         </div>
     );
 };

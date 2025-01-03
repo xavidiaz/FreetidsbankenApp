@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useItemsStore, useReviewsStore, useShopsStore, useCategoriesStore } from "@/store/useFreetidsbanken";
 import ReviewFormComponent from "@/components/ReviewFormComponent";
+import AddToCartButton from '@/components/AddToCartButton';
 
 const ItemDetailPage = () => {
     const { id } = useParams();
@@ -45,6 +46,8 @@ const ItemDetailPage = () => {
             ) : (
                 <p>No reservations.</p>
             )}
+            <h2>Add to Cart</h2>
+            <AddToCartButton item={item} />
 
             <h2>Reviews</h2>
             {itemReviews.length > 0 ? (

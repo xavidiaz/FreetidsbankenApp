@@ -3,9 +3,7 @@ import PageLayout from '@/Layouts/PageLayout';
 import { Link } from 'react-router-dom';
 
 const ReviewsPage = () => {
-
     const reviewsStore = useReviewsStore();
-
 
     return (
         <>
@@ -13,18 +11,14 @@ const ReviewsPage = () => {
                 title="Reviews"
                 data={reviewsStore.getFiltered()}
                 renderItem={(review) => (
-                    <li key={review.review_id}>
-                        <Link to={`/reviews/${review.review_id}`}>
-                            Review #{review.review_id}: {review.comment} (Rating: {review.rating})
-                        </Link>
-                    </li>
+                    <Link to={`/reviews/${review.review_id}`}>
+                        Review #{review.review_id}: {review.comment} (Rating: {review.rating})
+                    </Link>
                 )}
                 entity="reviews"
             />
-
         </>
     );
 };
-
 
 export default ReviewsPage;
