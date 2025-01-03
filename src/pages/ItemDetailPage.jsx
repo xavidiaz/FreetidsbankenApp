@@ -1,5 +1,6 @@
-import { useParams, Link } from 'react-router-dom';
-import { useItemsStore, useReviewsStore, useShopsStore, useCategoriesStore } from '@/store/useFreetidsbanken';
+import { useParams, Link } from "react-router-dom";
+import { useItemsStore, useReviewsStore, useShopsStore, useCategoriesStore } from "@/store/useFreetidsbanken";
+import ReviewFormComponent from "@/components/ReviewFormComponent";
 
 const ItemDetailPage = () => {
     const { id } = useParams();
@@ -15,8 +16,8 @@ const ItemDetailPage = () => {
 
     const shop = shopsStore.getById(item.shop_id);
     const category = categoriesStore.getById(item.category_id);
-    const itemReviews = item.reviews.map(reviewId => reviewsStore.getById(reviewId)).filter(Boolean);
-    const relatedItems = itemsStore.getAll().filter(i => i.category_id === item.category_id && i.item_id !== item.item_id);
+    const itemReviews = item.reviews.map((reviewId) => reviewsStore.getById(reviewId)).filter(Boolean);
+    const relatedItems = itemsStore.getAll().filter((i) => i.category_id === item.category_id && i.item_id !== item.item_id);
 
     return (
         <div>
@@ -24,8 +25,8 @@ const ItemDetailPage = () => {
             <img src={item.thumbnail} alt={item.name} width={200} />
             <p><strong>Description:</strong> {item.description}</p>
             <p><strong>Stock:</strong> {item.stock_quantity}</p>
-            <p><strong>Category:</strong> {category ? category.name : 'Unknown Category'}</p>
-            <p><strong>Shop:</strong> {shop ? shop.name : 'Unknown Shop'}</p>
+            <p><strong>Category:</strong> {category ? category.name : "Unknown Category"}</p>
+            <p><strong>Shop:</strong> {shop ? shop.name : "Unknown Shop"}</p>
 
             <h2>Gallery</h2>
             <div>
@@ -58,14 +59,15 @@ const ItemDetailPage = () => {
                 <p>No reviews yet.</p>
             )}
 
+            {/* 🔹 Add Review Form */}
+            <ReviewFormComponent itemId={id} />
+
             <h2>Similar Items</h2>
             {relatedItems.length > 0 ? (
                 <ul>
                     {relatedItems.map((relatedItem) => (
                         <li key={relatedItem.item_id}>
-                            <Link to={`/items/${relatedItem.item_id}`}>
-                                {relatedItem.name}
-                            </Link>
+                            <Link to={`/items/${relatedItem.item_id}`}>{relatedItem.name}</Link>
                         </li>
                     ))}
                 </ul>

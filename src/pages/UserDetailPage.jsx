@@ -8,14 +8,15 @@ const UserDetailPage = () => {
     const loansStore = useLoansStore();
     const reviewsStore = useReviewsStore();
 
+    // ✅ Fetch fresh data every time the component renders
     const user = usersStore.getById(Number(id));
     if (!user) {
         return <h1>User not found</h1>;
     }
 
     const preferredShop = shopsStore.getById(user.preferred_shop);
-    const userLoans = user.loans.map(loanId => loansStore.getById(loanId)).filter(Boolean);
-    const userReviews = user.reviews.map(reviewId => reviewsStore.getById(reviewId)).filter(Boolean);
+    const userLoans = loansStore.getAll().filter(loan => loan.user_id === user.user_id);
+    const userReviews = reviewsStore.getAll().filter(review => review.user_id === user.user_id);
 
     return (
         <div>

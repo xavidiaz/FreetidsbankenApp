@@ -10,7 +10,7 @@ const UsersPage = () => {
         <>
             <FilterInputComponent placeholder="Search Users..." store={useUsersStore} filterKey="user" />
             <PageLayout
-                title="Categories"
+                title="Users"
                 data={usersStore.getFiltered()}
                 renderItem={(user) => (
                     <Link to={`/users/${user.user_id}`}>{user.name}</Link>
