@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useItemsStore, useReviewsStore, useShopsStore, useCategoriesStore } from "@/store/useFreetidsbanken";
 import ReviewFormComponent from "@/components/ReviewFormComponent";
-import AddToCartButton from '@/components/AddToCartButton';
+import AddToCartButton from "@/components/AddToCartButton";
 
 const ItemDetailPage = () => {
     const { id } = useParams();
@@ -46,6 +46,7 @@ const ItemDetailPage = () => {
             ) : (
                 <p>No reservations.</p>
             )}
+
             <h2>Add to Cart</h2>
             <AddToCartButton item={item} />
 
@@ -67,10 +68,13 @@ const ItemDetailPage = () => {
 
             <h2>Similar Items</h2>
             {relatedItems.length > 0 ? (
-                <ul>
+                <ul style={{ listStyle: "none", padding: 0 }}>
                     {relatedItems.map((relatedItem) => (
-                        <li key={relatedItem.item_id}>
-                            <Link to={`/items/${relatedItem.item_id}`}>{relatedItem.name}</Link>
+                        <li key={relatedItem.item_id} style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
+                            <img src={relatedItem.thumbnail} alt={relatedItem.name} width={50} height={50} style={{ borderRadius: "5px" }} />
+                            <Link to={`/items/${relatedItem.item_id}`} style={{ fontWeight: "bold", textDecoration: "none" }}>
+                                {relatedItem.name}
+                            </Link>
                         </li>
                     ))}
                 </ul>

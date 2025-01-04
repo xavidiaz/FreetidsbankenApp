@@ -87,8 +87,15 @@ const ReviewDetailPage = () => {
                     <p><strong>Comment:</strong> {review.comment}</p>
                     <p><strong>Rating:</strong> {review.rating} / 5</p>
                     <p><strong>Reviewed by:</strong> {user ? user.name : 'Unknown User'}</p>
-                    <p><strong>Item:</strong> {item ? item.name : 'Unknown Item'}</p>
                     <p><strong>Date:</strong> {review.date}</p>
+
+                    {/* Display item with thumbnail */}
+                    {item && (
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '10px' }}>
+                            <img src={item.thumbnail} alt={item.name} width={70} height={70} style={{ borderRadius: '5px' }} />
+                            <p><strong>Item:</strong> {item.name}</p>
+                        </div>
+                    )}
 
                     {/* Show Edit/Delete buttons only for review owner */}
                     {isOwner && (

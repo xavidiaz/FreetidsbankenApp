@@ -82,7 +82,8 @@
                 "https://images.pexels.com/photos/7782/pexels-photo.jpg"
             ],
             "reviews": [
-                11
+                1,
+                7
             ],
             "dates_reserved": [
                 [
@@ -104,8 +105,9 @@
                 "https://images.pexels.com/photos/6789/pexels-photo.jpg"
             ],
             "reviews": [
-                12,
-                15
+                2,
+                8,
+                9
             ],
             "dates_reserved": [
                 [
@@ -127,7 +129,9 @@
                 "https://images.pexels.com/photos/3321/pexels-photo.jpg"
             ],
             "reviews": [
-                9
+                3,
+                10,
+                11
             ],
             "dates_reserved": [
                 [
@@ -149,8 +153,8 @@
                 "https://images.pexels.com/photos/5551/pexels-photo.jpg"
             ],
             "reviews": [
-                6,
-                13
+                4,
+                12
             ],
             "dates_reserved": [
                 [
@@ -172,7 +176,8 @@
                 "https://images.pexels.com/photos/8733/pexels-photo.jpg"
             ],
             "reviews": [
-                3,
+                5,
+                13,
                 14
             ],
             "dates_reserved": [
@@ -195,7 +200,9 @@
                 "https://images.pexels.com/photos/6451/pexels-photo.jpg"
             ],
             "reviews": [
-                8
+                6,
+                15,
+                16
             ],
             "dates_reserved": [
                 [
@@ -208,43 +215,131 @@
     "Reviews": [
         {
             "review_id": 1,
-            "user_id": 9,
-            "item_id": 12,
+            "user_id": 3,
+            "item_id": 1,
             "rating": 5,
-            "comment": "Review comment 1",
+            "comment": "Fantastic basketball gear! Very comfortable.",
             "date": "2024-12-23"
         },
         {
             "review_id": 2,
-            "user_id": 12,
-            "item_id": 11,
-            "rating": 5,
-            "comment": "Review comment 2",
-            "date": "2024-12-10"
+            "user_id": 5,
+            "item_id": 2,
+            "rating": 4,
+            "comment": "Great quality, but a little expensive.",
+            "date": "2024-12-19"
         },
         {
             "review_id": 3,
             "user_id": 7,
-            "item_id": 6,
-            "rating": 4,
-            "comment": "Review comment 3",
+            "item_id": 3,
+            "rating": 5,
+            "comment": "Perfect cleats for any football player!",
             "date": "2024-12-10"
         },
         {
             "review_id": 4,
             "user_id": 4,
-            "item_id": 15,
+            "item_id": 4,
             "rating": 4,
-            "comment": "Review comment 4",
+            "comment": "Good control but a bit heavy for my taste.",
             "date": "2024-12-25"
         },
         {
             "review_id": 5,
-            "user_id": 12,
+            "user_id": 9,
+            "item_id": 5,
+            "rating": 5,
+            "comment": "These running shoes are amazing!",
+            "date": "2024-12-28"
+        },
+        {
+            "review_id": 6,
+            "user_id": 2,
+            "item_id": 6,
+            "rating": 4,
+            "comment": "Feels secure and lightweight.",
+            "date": "2024-12-15"
+        },
+        {
+            "review_id": 7,
+            "user_id": 1,
+            "item_id": 1,
+            "rating": 3,
+            "comment": "Decent but expected better durability.",
+            "date": "2024-12-18"
+        },
+        {
+            "review_id": 8,
+            "user_id": 6,
             "item_id": 2,
-            "rating": 1,
-            "comment": "Review comment 5",
-            "date": "2024-12-19"
+            "rating": 5,
+            "comment": "Superb design and material.",
+            "date": "2024-12-22"
+        },
+        {
+            "review_id": 9,
+            "user_id": 8,
+            "item_id": 2,
+            "rating": 3,
+            "comment": "Not bad, but takes time to break in.",
+            "date": "2024-12-30"
+        },
+        {
+            "review_id": 10,
+            "user_id": 10,
+            "item_id": 3,
+            "rating": 4,
+            "comment": "Excellent grip, but runs a bit small.",
+            "date": "2025-01-02"
+        },
+        {
+            "review_id": 11,
+            "user_id": 4,
+            "item_id": 3,
+            "rating": 5,
+            "comment": "Would recommend to anyone!",
+            "date": "2025-01-05"
+        },
+        {
+            "review_id": 12,
+            "user_id": 5,
+            "item_id": 4,
+            "rating": 5,
+            "comment": "Perfect weight balance for precise shots.",
+            "date": "2025-01-08"
+        },
+        {
+            "review_id": 13,
+            "user_id": 6,
+            "item_id": 5,
+            "rating": 4,
+            "comment": "Nice fit, but colors fade after washes.",
+            "date": "2025-01-10"
+        },
+        {
+            "review_id": 14,
+            "user_id": 7,
+            "item_id": 5,
+            "rating": 5,
+            "comment": "Best running shoes I've ever owned!",
+            "date": "2025-01-15"
+        },
+        {
+            "review_id": 15,
+            "user_id": 8,
+            "item_id": 6,
+            "rating": 3,
+            "comment": "Good, but ventilation could be better.",
+            "date": "2025-01-20"
+        },
+        {
+            "review_id": 16,
+            "user_id": 9,
+            "item_id": 6,
+            "rating": 5,
+            "comment": "Fantastic helmet, super secure!",
+            "date": "2025-01-25"
         }
     ],
     "Loans": [

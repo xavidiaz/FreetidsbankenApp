@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: [
-		"./index.html",  // Include your root HTML file
-		"./src/**/*.{js,jsx,ts,tsx,vue}"  // Scan all files in `src/`
+		"./index.html",
+		"./src/**/*.{js,jsx,ts,tsx,vue}"
 	],
 	theme: {
 		extend: {
@@ -55,6 +55,7 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
-}
-
+	plugins: [
+		import("tailwindcss-animate")
+	],
+};

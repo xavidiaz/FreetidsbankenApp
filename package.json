@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "add": "^2.0.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
     "qrcode.react": "^4.2.0",
     "react": "^19.0.0",
     "react-router-dom": "^7.1.1",
+    "shadcn-ui": "^0.9.4",
+    "skeleton": "^0.1.2",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "zustand": "^5.0.2"
