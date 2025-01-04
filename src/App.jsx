@@ -14,6 +14,17 @@ import UserButton from "@/components/UserButton";
 import CartPage from '@/pages/CartPage';
 import CheckoutSuccessPage from '@/pages/CheckoutSuccessPage';
 import { useCartStore } from '@/store/useCartStore';
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+
 
 
 const App = () => {
@@ -24,9 +35,7 @@ const App = () => {
     <>
       <nav>
         <ul>
-          <li><Link to="/users">Users</Link></li>
-          <li><Link to="/items">Items</Link></li>
-          <li><Link to="/cart">🛒 Cart ({totalItems})</Link></li>
+          <li><Link to="/">Items</Link></li>
           <UserButton /> {/* User profile & login/logout button */}
         </ul>
       </nav>
@@ -35,7 +44,7 @@ const App = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/users" element={<UsersPage />} />
         <Route path="/users/:id" element={<UserDetailPage />} />
-        <Route path="/items" element={<ItemsPage />} />
+        <Route path="/" element={<ItemsPage />} />
         <Route path="/items/:id" element={<ItemDetailPage />} />
         <Route path="/loans" element={<LoansPage />} />
         <Route path="/loans/:id" element={<LoanDetailPage />} />
@@ -47,6 +56,8 @@ const App = () => {
         <Route path="/checkout-success/:loanId" element={<CheckoutSuccessPage />} />
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
+
+      <CartPage totalItems={totalItems} />
     </>
   );
 };

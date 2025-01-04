@@ -1,6 +1,8 @@
-import { useReviewsStore, useItemsStore } from '@/store/useFreetidsbanken';
-import PageLayout from '@/Layouts/PageLayout';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { useReviewsStore, useItemsStore } from "@/store/useFreetidsbanken";
+import PageLayout from "@/Layouts/PageLayout";
+import { Link, useSearchParams } from "react-router-dom";
+import SkeletonPlaceholder from "@/components/SkeletonPlaceholder";
 
 const ReviewsPage = () => {
     const reviewsStore = useReviewsStore();
@@ -8,11 +10,21 @@ const ReviewsPage = () => {
     const [searchParams] = useSearchParams();
     const itemId = searchParams.get("item_id");
 
-    // ✅ Filter reviews based on query param
-    let reviews = reviewsStore.getFiltered();
-    if (itemId) {
-        reviews = reviews.filter(review => review.item_id === Number(itemId));
-    }
+    const [isLoading, setIsLoading] = useState(true);
+    const [reviews, setReviews] = useState([]);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            let filteredReviews = reviewsStore.getFiltered();
+            if (itemId) {
+                filteredReviews = filteredReviews.filter(review => review.item_id === Number(itemId));
+            }
+            setReviews(filteredReviews);
+            setIsLoading(false);
+        }, 500); // Simulate loading delay
+
+        return () => clearTimeout(timer);
+    }, [itemId, reviewsStore]);
 
     // ✅ Group reviews by item
     const reviewsByItem = reviews.reduce((acc, review) => {
@@ -27,35 +39,41 @@ const ReviewsPage = () => {
         <>
             <h1>Reviews</h1>
 
-            {Object.keys(reviewsByItem).map((itemId) => {
-                const item = itemsStore.getById(Number(itemId));
-                return (
-                    <div key={itemId} style={{ marginBottom: "20px" }}>
-                        {/* ✅ Show item name & thumbnail only once per item */}
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            {isLoading ? (
+                <SkeletonPlaceholder.Review />
+            ) : Object.keys(reviewsByItem).length === 0 ? (
+                <p className="text-center text-lg mt-4">⚠️ No reviews found.</p>
+            ) : (
+                Object.keys(reviewsByItem).map((itemId) => {
+                    const item = itemsStore.getById(Number(itemId));
+                    return (
+                        <div key={itemId} className="mb-6">
+                            {/* ✅ Show item name & thumbnail only once per item */}
                             {item && (
-                                <img src={item.thumbnail} alt={item.name} width={50} height={50} style={{ borderRadius: '5px' }} />
+                                <div className="flex items-center gap-4">
+                                    <img src={item.thumbnail} alt={item.name} className="w-12 h-12 rounded-md" />
+                                    <h2>
+                                        <Link to={`/items/${itemId}`} className="font-semibold text-lg">
+                                            {item.name}
+                                        </Link>
+                                    </h2>
+                                </div>
                             )}
-                            <h2>
-                                <Link to={`/items/${itemId}`} style={{ textDecoration: 'none' }}>
-                                    {item ? item.name : "Unknown Item"}
-                                </Link>
-                            </h2>
-                        </div>
 
-                        {/* 🔹 List all reviews for this item */}
-                        <ul>
-                            {reviewsByItem[itemId].map((review) => (
-                                <li key={review.review_id}>
-                                    <Link to={`/reviews/${review.review_id}`} style={{ fontWeight: 'bold', textDecoration: 'none' }}>
-                                        Review #{review.review_id}
-                                    </Link>: {review.comment} (⭐ {review.rating})
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                );
-            })}
+                            {/* 🔹 List all reviews for this item */}
+                            <ul className="mt-2 space-y-2">
+                                {reviewsByItem[itemId].map((review) => (
+                                    <li key={review.review_id} className="border-b pb-2">
+                                        <Link to={`/reviews/${review.review_id}`} className="font-medium">
+                                            Review #{review.review_id}
+                                        </Link>: {review.comment} (⭐ {review.rating})
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    );
+                })
+            )}
         </>
     );
 };

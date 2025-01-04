@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useCartStore } from '@/store/useCartStore';
+import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
 
 const AddToCartButton = ({ item }) => {
     const cartStore = useCartStore();
@@ -35,16 +37,33 @@ const AddToCartButton = ({ item }) => {
     return (
         <div>
             {inCart ? (
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <button onClick={handleDecrease}>-</button>
-                    <span>{quantity}</span>
-                    <button onClick={handleIncrease}>+</button>
-                    <button onClick={handleRemoveFromCart} style={{ background: 'red', color: 'white' }}>
-                        🗑️
-                    </button>
-                </div>
+                <>
+
+                    <div className='flex flex-col items-center gap-1'>
+                        <div
+                            className='flex flex-row items-center gap-0'>
+                            <Button
+                                variant="destructive"
+                                className="size-8 border-2"
+                                onClick={handleDecrease}>-</Button>
+                            <Input className="size-8 p-0 text-center" value={quantity} />
+                            <Button
+                                variant="primary"
+                                className="size-8 border-2 border-primary text-primary "
+                                onClick={handleIncrease}>+</Button>
+                        </div>
+                        <Button
+                            className="h-8 w-24 border-destructive text-destructive hover:bg-destructive/10"
+                            variant="outline"
+                            onClick={handleRemoveFromCart}>
+                            🗑️
+                        </Button>
+                    </div>
+                </>
             ) : (
-                <button onClick={handleAddToCart}>Add to Cart</button>
+                <Button
+                    className="h-8 w-24"
+                    onClick={handleAddToCart}>Reserve</Button>
             )}
         </div>
     );

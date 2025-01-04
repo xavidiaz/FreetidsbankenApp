@@ -1,18 +1,44 @@
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useLoansStore, useShopsStore, useItemsStore } from "@/store/useFreetidsbanken";
 import { QRCodeSVG } from "qrcode.react";
+import SkeletonPlaceholder from "@/components/SkeletonPlaceholder";
 
 const CheckoutSuccessPage = () => {
     const { loanId } = useParams();
     const loansStore = useLoansStore();
     const shopsStore = useShopsStore();
+    const itemsStore = useItemsStore();
 
-    const loan = loansStore.getById(Number(loanId));
+    const [isLoading, setIsLoading] = useState(true);
+    const [loan, setLoan] = useState(null);
+    const [shop, setShop] = useState(null);
+    const [loanedItems, setLoanedItems] = useState([]);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            const fetchedLoan = loansStore.getById(Number(loanId));
+            if (fetchedLoan) {
+                setLoan(fetchedLoan);
+                setShop(shopsStore.getById(fetchedLoan.shop_id));
+
+                // Fetch loaned items with details
+                const items = fetchedLoan.item_id.map((itemId) => itemsStore.getById(itemId)).filter(Boolean);
+                setLoanedItems(items);
+            }
+            setIsLoading(false);
+        }, 500); // Adjust delay if needed
+
+        return () => clearTimeout(timer);
+    }, [loanId, loansStore, shopsStore, itemsStore]);
+
+    if (isLoading) {
+        return <SkeletonPlaceholder.LoanDetails />;
+    }
+
     if (!loan) {
         return <h1>Loan not found</h1>;
     }
-
-    const shop = shopsStore.getById(loan.shop_id);
 
     // ✅ Format loan details as text for QR Code
     const qrValue = JSON.stringify({
@@ -21,7 +47,7 @@ const CheckoutSuccessPage = () => {
         shop: shop ? shop.name : "Unknown Shop",
         date_start: loan.date_start,
         date_end: loan.date_end,
-        items: loan.item_id,  // List of item IDs
+        items: loan.item_id, // List of item IDs
     });
 
     return (
@@ -36,18 +62,17 @@ const CheckoutSuccessPage = () => {
 
             <h2>Loaned Items</h2>
             <ul>
-                {loan.item_id.map((itemId, index) => {
-                    const item = useItemsStore.getState().getById(itemId);
-                    return item ? (
-                        <li key={index} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                            <img src={item.thumbnail} alt={item.name} width={50} height={50} style={{ borderRadius: "5px" }} />
+                {loanedItems.length > 0 ? (
+                    loanedItems.map((item, index) => (
+                        <li key={index} className="flex items-center gap-4">
+                            <img src={item.thumbnail} alt={item.name} className="w-12 h-12 rounded-md" />
                             <span><strong>{item.name}</strong></span>
-                            <span>Quantity: {item.quantity || 1}</span> {/* Default quantity to 1 if missing */}
+                            <span>Quantity: {item.quantity || 1}</span> {/* Default to 1 if missing */}
                         </li>
-                    ) : (
-                        <li key={index}>Item #{itemId} (Not Found)</li>
-                    );
-                })}
+                    ))
+                ) : (
+                    <p>No items found.</p>
+                )}
             </ul>
 
             <h2>📌 Scan this QR Code at the shop for pickup:</h2>

@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { useReviewsStore, useUsersStore, useItemsStore } from '@/store/useFreetidsbanken';
-import { useAuthStore } from '@/store/useAuthStore';
+import { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { useReviewsStore, useUsersStore, useItemsStore } from "@/store/useFreetidsbanken";
+import { useAuthStore } from "@/store/useAuthStore";
+import SkeletonPlaceholder from "@/components/SkeletonPlaceholder";
 
 const ReviewDetailPage = () => {
     const { id } = useParams();
@@ -12,21 +13,33 @@ const ReviewDetailPage = () => {
     const itemsStore = useItemsStore();
     const authUser = useAuthStore(state => state.authUser);
 
-    const review = reviewsStore.getById(Number(id));
-    if (!review) {
-        return <h1>Review not found</h1>;
-    }
+    // ✅ Hooks should ALWAYS be at the top!
+    const [isLoading, setIsLoading] = useState(true);
+    const [review, setReview] = useState(null);
+    const [editing, setEditing] = useState(false);
+    const [updatedComment, setUpdatedComment] = useState("");
+    const [updatedRating, setUpdatedRating] = useState(5);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            const foundReview = reviewsStore.getById(Number(id));
+            if (foundReview) {
+                setReview(foundReview);
+                setUpdatedComment(foundReview.comment);
+                setUpdatedRating(foundReview.rating);
+            }
+            setIsLoading(false);
+        }, 500); // Simulated loading delay
+
+        return () => clearTimeout(timer);
+    }, [id, reviewsStore]);
+
+    if (isLoading) return <SkeletonPlaceholder.Review />;
+    if (!review) return <h1 className="text-center text-lg">⚠️ Review not found.</h1>;
 
     const user = usersStore.getById(review.user_id);
     const item = itemsStore.getById(review.item_id);
-
-    // 🔹 Only allow review owner to edit/delete
     const isOwner = authUser && review.user_id === authUser.user_id;
-
-    // 🔹 Manage Edit State
-    const [editing, setEditing] = useState(false);
-    const [updatedComment, setUpdatedComment] = useState(review.comment);
-    const [updatedRating, setUpdatedRating] = useState(review.rating);
 
     // ✅ Update Review Handler
     const handleUpdate = () => {
@@ -34,12 +47,10 @@ const ReviewDetailPage = () => {
             alert("You can only update your own reviews.");
             return;
         }
-
         reviewsStore.update(review.review_id, {
             comment: updatedComment,
             rating: Number(updatedRating),
         });
-
         setEditing(false);
         alert("Review updated successfully!");
     };
@@ -51,58 +62,65 @@ const ReviewDetailPage = () => {
             return;
         }
 
-        const confirmDelete = window.confirm("Are you sure you want to delete this review?");
-        if (confirmDelete) {
+        if (window.confirm("Are you sure you want to delete this review?")) {
             reviewsStore.delete(review.review_id);
             alert("Review deleted successfully!");
-            navigate('/reviews'); // Redirect to reviews list
+            navigate("/reviews");
         }
     };
 
     return (
-        <div>
-            <h1>Review #{review.review_id}</h1>
+        <div className="max-w-lg mx-auto space-y-4">
+            <h1 className="text-xl font-semibold">Review #{review.review_id}</h1>
+
             {editing ? (
-                <div>
-                    <label>
-                        <strong>Rating:</strong>
-                        <select value={updatedRating} onChange={(e) => setUpdatedRating(e.target.value)}>
-                            {[1, 2, 3, 4, 5].map(num => <option key={num} value={num}>{num}</option>)}
+                <div className="space-y-4">
+                    <label className="block">
+                        <span className="font-medium">Rating:</span>
+                        <select
+                            value={updatedRating}
+                            onChange={(e) => setUpdatedRating(e.target.value)}
+                            className="w-full border p-2 rounded-md"
+                        >
+                            {[1, 2, 3, 4, 5].map(num => (
+                                <option key={num} value={num}>{num}</option>
+                            ))}
                         </select>
                     </label>
-                    <br />
-                    <label>
-                        <strong>Comment:</strong>
+                    <label className="block">
+                        <span className="font-medium">Comment:</span>
                         <textarea
                             value={updatedComment}
                             onChange={(e) => setUpdatedComment(e.target.value)}
+                            className="w-full border p-2 rounded-md"
                         />
                     </label>
-                    <br />
-                    <button onClick={handleUpdate}>Save</button>
-                    <button onClick={() => setEditing(false)}>Cancel</button>
+                    <div className="flex gap-2">
+                        <button className="btn-primary" onClick={handleUpdate}>Save</button>
+                        <button className="btn-secondary" onClick={() => setEditing(false)}>Cancel</button>
+                    </div>
                 </div>
             ) : (
                 <>
                     <p><strong>Comment:</strong> {review.comment}</p>
                     <p><strong>Rating:</strong> {review.rating} / 5</p>
-                    <p><strong>Reviewed by:</strong> {user ? user.name : 'Unknown User'}</p>
+                    <p><strong>Reviewed by:</strong> {user ? user.name : "Unknown User"}</p>
                     <p><strong>Date:</strong> {review.date}</p>
 
                     {/* Display item with thumbnail */}
                     {item && (
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '10px' }}>
-                            <img src={item.thumbnail} alt={item.name} width={70} height={70} style={{ borderRadius: '5px' }} />
-                            <p><strong>Item:</strong> {item.name}</p>
+                        <div className="flex items-center gap-4 mt-4">
+                            <img src={item.thumbnail} alt={item.name} className="w-16 h-16 rounded-md" />
+                            <p className="font-semibold">Item: {item.name}</p>
                         </div>
                     )}
 
                     {/* Show Edit/Delete buttons only for review owner */}
                     {isOwner && (
-                        <>
-                            <button onClick={() => setEditing(true)}>Edit</button>
-                            <button onClick={handleDelete} style={{ color: 'red' }}>Delete</button>
-                        </>
+                        <div className="flex gap-2 mt-4">
+                            <button className="btn-primary" onClick={() => setEditing(true)}>Edit</button>
+                            <button className="btn-danger" onClick={handleDelete}>Delete</button>
+                        </div>
                     )}
                 </>
             )}

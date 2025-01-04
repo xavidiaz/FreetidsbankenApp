@@ -1,7 +1,9 @@
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useItemsStore, useReviewsStore, useShopsStore, useCategoriesStore } from "@/store/useFreetidsbanken";
 import ReviewFormComponent from "@/components/ReviewFormComponent";
 import AddToCartButton from "@/components/AddToCartButton";
+import SkeletonPlaceholder from "@/components/SkeletonPlaceholder";
 
 const ItemDetailPage = () => {
     const { id } = useParams();
@@ -10,9 +12,24 @@ const ItemDetailPage = () => {
     const shopsStore = useShopsStore();
     const categoriesStore = useCategoriesStore();
 
-    const item = itemsStore.getById(Number(id));
-    if (!item) {
-        return <h1>Item not found</h1>;
+    // 🔹 Local state for loading effect
+    const [isLoading, setIsLoading] = useState(true);
+    const [item, setItem] = useState(null);
+
+    useEffect(() => {
+        // Simulate a short delay before loading the item
+        const timer = setTimeout(() => {
+            const fetchedItem = itemsStore.getById(Number(id));
+            setItem(fetchedItem);
+            setIsLoading(false);
+        }, 500); // Adjust delay time if needed
+
+        return () => clearTimeout(timer); // Cleanup function
+    }, [id, itemsStore]);
+
+    // ✅ Show Skeleton While Data Loads
+    if (isLoading || !item) {
+        return <SkeletonPlaceholder.Item />;
     }
 
     const shop = shopsStore.getById(item.shop_id);
@@ -68,13 +85,11 @@ const ItemDetailPage = () => {
 
             <h2>Similar Items</h2>
             {relatedItems.length > 0 ? (
-                <ul style={{ listStyle: "none", padding: 0 }}>
+                <ul>
                     {relatedItems.map((relatedItem) => (
-                        <li key={relatedItem.item_id} style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
-                            <img src={relatedItem.thumbnail} alt={relatedItem.name} width={50} height={50} style={{ borderRadius: "5px" }} />
-                            <Link to={`/items/${relatedItem.item_id}`} style={{ fontWeight: "bold", textDecoration: "none" }}>
-                                {relatedItem.name}
-                            </Link>
+                        <li key={relatedItem.item_id}>
+                            <img src={relatedItem.thumbnail} alt={relatedItem.name} width={50} height={50} />
+                            <Link to={`/items/${relatedItem.item_id}`}>{relatedItem.name}</Link>
                         </li>
                     ))}
                 </ul>
