@@ -1,4 +1,3 @@
-import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from 'tailwindcss';
@@ -14,7 +13,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(path.dirname(new URL(import.meta.url).pathname), "./src"),
+      //"@": path.resolve(path.dirname(new URL(import.meta.url).pathname), "./src"),
+      "@": "/src",
     },
   },
   build: {
@@ -30,5 +30,10 @@ export default defineConfig({
         },
       },
     },
+  },
+  server: {
+    port: 3000, // ✅ Forces Vite to use port 3000
+    strictPort: true, // ✅ Ensures it does not switch to another port
+    host: "localhost", // ✅ Explicitly sets the host
   },
 });
