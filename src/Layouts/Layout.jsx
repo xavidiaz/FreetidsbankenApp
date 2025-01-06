@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/toaster"; // ✅ Keep `Toaster` global
 const Layout = () => {
     return (
         <ToastProvider>
-            <div className="flex flex-col gap-0 min-h-screen">
+            <div className="flex flex-col gap-0 min-h-screen relative">
                 {/* ✅ Fixed Navbar */}
                 <Navbar />
 
@@ -23,10 +23,13 @@ const Layout = () => {
                     toastOptions={{
                         className: "toast",
                         style: {
-                            zIndex: 9999, /* ✅ Ensures it's on top */
+                            backgroundColor: "hsl(0, 0%, 100%)", // ✅ Ensure solid background
+                            border: "1px solid hsl(0, 0%, 80%)",
+                            zIndex: 99999, // ✅ Make sure it's always on top
                         },
                     }}
                 />
+
 
                 {/* ✅ Footer (CartPage) */}
                 <CartPage />
