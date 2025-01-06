@@ -148,7 +148,7 @@ const CartPage = () => {
 
 
     return (
-        <div className="sticky bottom-0 left-0 w-full bg-background border-t-4 border-green-100">
+        <div className="fixed bottom-0 left-0 w-full bg-background border-t-4 border-green-100">
             <Drawer className="shadow-lg" ref={drawerRef}>
                 <DrawerTrigger className="w-full flex justify-between items-center px-4 py-2 shadow-lg">
                     <DrawerTriggerContent selectedShop={selectedShop} startDate={startDate} endDate={endDate} totalItems={totalItems} className="" />
