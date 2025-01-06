@@ -4,9 +4,11 @@ import { DayPicker } from "react-day-picker";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
 
 const DateRangePicker = () => {
     const { startDate, endDate, setStartDate, setEndDate } = useCartStore();
+    const { toast } = useToast();
 
     // ✅ Maintain internal state for selection
     const [selectedRange, setSelectedRange] = useState({
@@ -28,6 +30,16 @@ const DateRangePicker = () => {
             setEndDate(""); // Clear Zustand state when no date selected
         }
     }, [selectedRange, setStartDate, setEndDate]);
+
+    const handleSaveDateRange = () => {
+        if (startDate && endDate) {
+            toast({
+                title: "📅 Date Range Saved",
+                description: `Selected range: ${startDate} to ${endDate}`,
+                duration: 3000,
+            });
+        }
+    };
 
     return (
         <Sheet>
@@ -63,7 +75,7 @@ const DateRangePicker = () => {
 
                 {/* 🔹 Bottom Button */}
                 <SheetClose asChild>
-                    <Button type="submit">Save date range</Button>
+                    <Button onClick={handleSaveDateRange} type="submit">Save date range</Button>
                 </SheetClose>
             </SheetContent>
 

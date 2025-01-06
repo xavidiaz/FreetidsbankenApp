@@ -8,16 +8,34 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import { useToast } from "@/hooks/use-toast";
 
 const LocationPicker = () => {
     const shopsStore = useShopsStore();
     const cartStore = useCartStore();
+    const { toast } = useToast();
+
+    const handleShopSelect = (value) => {
+        const shopId = Number(value);
+        cartStore.setSelectedShop(shopId); // ✅ Update store state
+
+        const selectedShop = shopsStore.getById(shopId); // ✅ Get the shop object
+
+        if (selectedShop) {
+            toast({
+                title: "🏪 Store Selected",
+                description: `You have selected ${selectedShop.name}.`,
+                duration: 3000,
+            });
+        }
+    };
+
 
     return (
         <div className="">
             <Select
                 value={cartStore.selectedShop?.toString() || ""}
-                onValueChange={(value) => cartStore.setSelectedShop(Number(value))}
+                onValueChange={handleShopSelect}
             >
                 <SelectTrigger className="h-12 min-w-fit">
                     <SelectValue placeholder="Select Shop" />

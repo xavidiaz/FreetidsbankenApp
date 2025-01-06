@@ -8,29 +8,42 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Form, FormField, FormItem, FormControl, FormMessage } from "@/components/ui/form";
 import { GalleryVerticalEnd } from "lucide-react";
+import SignUpSheet from "@/components/SignUpSheet";
+import { useToast } from "@/hooks/use-toast";
 
 // ✅ Define Zod schema for form validation
 const loginSchema = z.object({
     email: z.string().email({ message: "Invalid email format" }),
 });
 
-export function LoginPage() {
+const LoginPage = ({ closeDialog }) => {
     const login = useAuthStore((state) => state.login);
-    const navigate = useNavigate();
+    const { toast } = useToast();
 
     const form = useForm({
         resolver: zodResolver(loginSchema),
         defaultValues: { email: "" },
     });
 
-    // ✅ Fixed `handleLogin` function
     const handleLogin = (values) => {
         const success = login(values.email);
+
         if (success) {
-            navigate("/", { state: { from: location.pathname } });
-            // ✅ Redirect after successful login
+            toast({
+                title: "✅ Login Successful",
+                description: "You are now signed in.",
+                variant: "success",
+                duration: 3000,
+            });
+
+            closeDialog(); // ✅ Close the modal after successful login
         } else {
-            alert("User not found. Please enter a registered email.");
+            toast({
+                title: "⚠️ Login Failed",
+                description: "No account found with this email.",
+                variant: "destructive",
+                duration: 3000,
+            });
         }
     };
 
@@ -94,9 +107,17 @@ export function LoginPage() {
                         Continue with Google
                     </Button>
                 </div>
+                {/* 🔹 Redirect to Sign Up */}
+                <div className="mt-4 text-center text-sm">
+                    Don&apos;t have an account?{" "}
+                    <span                    >
+                        <SignUpSheet />
+                    </span>
+                </div>
+
             </div>
         </div>
     );
-}
+};
 
 export default LoginPage;

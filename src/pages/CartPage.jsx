@@ -20,6 +20,8 @@ import { MapPin, CalendarRange, ShoppingCart, AlertTriangle } from 'lucide-react
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from "@/components/ui/button";
 import Img from '@/components/Img';
+import { ToastAction } from "@/components/ui/toast";
+import SignInDialog from "@/components/SignInDialog";
 
 const CartPage = () => {
 
@@ -34,6 +36,7 @@ const CartPage = () => {
     const shopRef = useRef(null);
     const drawerRef = useRef(null);
     const [isLoading, setIsLoading] = useState(true);
+    const [showSignIn, setShowSignIn] = useState(false); // ✅ Manage sign-in dialog state
 
     const cartItems = cartStore.cart;
     const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
@@ -45,25 +48,19 @@ const CartPage = () => {
         return () => clearTimeout(timer);
     }, [cartItems]);
 
-    const closeDrawer = () => {
-        if (drawerRef.current) {
-            drawerRef.current.close();
-        }
-    };
 
     const handleCheckout = () => {
-        if (!authUser) {
-            showToast("Authentication Required", "You must be logged in to proceed.", "destructive");
-            return;
-        }
-
         if (cartItems.length === 0) {
-            showToast("Cart is Empty", "Please add items before checking out.", "destructive");
+            toast({
+                title: "Cart is Empty",
+                description: "Please add items before checking out.",
+                variant: "destructive",
+            });
+
             return;
         }
 
         if (!cartStore.selectedShop) {
-
             toast({
                 title: "Select a Pickup Shop",
                 description: "Please select a shop before checking out.",
@@ -102,6 +99,26 @@ const CartPage = () => {
             return;
         }
 
+        if (!authUser) {
+            toast({
+                title: "Authentication Required",
+                description: "You must be logged in to proceed.",
+                variant: "destructive",
+                duration: 5000,
+                action: (
+                    <ToastAction
+                        altText="Sign In"
+                        onClick={() => {
+                            console.log("Opening SignInDialog"); // ✅ Debug log
+                            setShowSignIn(true); // ✅ Correctly updating state
+                        }}
+                    >
+                        Sign In
+                    </ToastAction>
+                ),
+            });
+            return;
+        }
 
 
         const newLoan = {
@@ -116,7 +133,13 @@ const CartPage = () => {
 
         loansStore.add(newLoan);
         cartStore.clearCart();
-        showToast("Checkout Successful", "Your loan request has been submitted.", "success");
+
+        toast({
+            title: "Checkout Successful",
+            description: "Your loan request has been submitted.",
+            variant: "success",
+            duration: 5000, // 5 seconds
+        });
 
         setTimeout(() => {
             window.location.href = `/checkout-success/${newLoan.loan_id}`;
@@ -125,26 +148,28 @@ const CartPage = () => {
     const handleClearCart = () => {
 
         if (cartItems.length === 0) {
-            showToast("Cart already is Empty", "destructive");
+            toast({
+                title: "Cart already is Empty",
+                description: "You don't have any items in your cart.",
+                variant: "destructive",
+                duration: 5000, // 5 seconds
+            });
             return;
         }
 
         cartStore.clearCart();
-        showToast("Cleart Successfully done", "success");
+        toast({
+            title: "Cart Cleared",
+            description: "Your cart has been cleared.",
+            variant: "destructive",
+            duration: 5000, // 5 seconds
+        });
 
         setTimeout(() => {
             window.location.href = `/`;
         }, 100);
     };
 
-    const showToast = (title, description, variant = "default") => {
-        toast({
-            title,
-            description,
-            variant,
-            className: "custom-toast", // ✅ Apply HSL background
-        });
-    };
 
 
     return (
@@ -185,6 +210,8 @@ const CartPage = () => {
                     )}
                 </DrawerContent>
             </Drawer>
+            {/* ✅ Render SignInDialog when showSignIn is true */}
+            {showSignIn && <SignInDialog isOpen={showSignIn} setIsOpen={setShowSignIn} />}
         </div>
     );
 };
@@ -240,7 +267,7 @@ const CartItemsList = ({ cartItems }) => (
 
 const CheckoutSection = ({
     handleCheckout, handleClearCart, shopRef,
-    dateRef }) => (
+    dateRef, showSignIn, setShowSignIn }) => (
     <div className="space-y-2 w-full">
         <h4 className="text-sm font-medium text-muted-foreground">Pickup Location & Date</h4>
         <div className="flex items-center gap-4 bg-card p-2 rounded-md">
@@ -262,6 +289,7 @@ const CheckoutSection = ({
             <Button onClick={handleClearCart} variant="destructive">Clear Cart</Button>
         </div>
     </div>
+
 );
 
 export default CartPage;

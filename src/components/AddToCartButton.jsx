@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 import { useCartStore } from '@/store/useCartStore';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { useToast } from "@/hooks/use-toast";
 
 const AddToCartButton = ({ item }) => {
+    const { toast } = useToast();
     const cartStore = useCartStore();
     const cartItem = cartStore.getCartItem ? cartStore.getCartItem(item.item_id) : null;
 
@@ -22,12 +24,22 @@ const AddToCartButton = ({ item }) => {
     const handleAddToCart = () => {
         cartStore.addToCart({ ...item, quantity });
         setInCart(true);
+        toast({
+            title: "✅ Added to Cart",
+            description: `${item.name} has been added to your cart.`,
+            duration: 3000,
+        });
     };
 
     const handleIncrease = () => {
         const newQuantity = quantity + 1;
         setQuantity(newQuantity);
         cartStore.updateCartItem(item.item_id, newQuantity);
+        toast({
+            title: "🔼 Quantity Increased",
+            description: `Increased ${item.name} quantity to ${newQuantity}.`,
+            duration: 2000,
+        });
     };
 
     const handleDecrease = () => {
@@ -35,6 +47,11 @@ const AddToCartButton = ({ item }) => {
             const newQuantity = quantity - 1;
             setQuantity(newQuantity);
             cartStore.updateCartItem(item.item_id, newQuantity);
+            toast({
+                title: "🔽 Quantity Decreased",
+                description: `Reduced ${item.name} quantity to ${newQuantity}.`,
+                duration: 2000,
+            });
         } else {
             handleRemoveFromCart();
         }
@@ -44,6 +61,11 @@ const AddToCartButton = ({ item }) => {
         cartStore.removeFromCart(item.item_id);
         setInCart(false);
         setQuantity(1);
+        toast({
+            title: "🗑️ Removed from Cart",
+            description: `${item.name} has been removed from your cart.`,
+            duration: 3000,
+        });
     };
 
     return (

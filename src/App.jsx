@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import UsersPage from "@/pages/UsersPage";
 import UserDetailPage from "@/pages/UserDetailPage";
 import LoginPage from "@/pages/LoginPage";
+import SignUpPage from "@/pages/SignUpPage";
+import SignUpSuccessPage from "@/pages/SignUpSuccessPage";
 import ItemsPage from "@/pages/ItemsPage";
 import ItemDetailPage from "@/pages/ItemDetailPage";
 import LoansPage from "@/pages/LoansPage";
@@ -22,6 +24,8 @@ const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<ItemsPage />} /> {/* Default Home Page */}
         <Route path="login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/signup-success" element={<SignUpSuccessPage />} /> {/* ✅ New Route */}
         <Route path="users" element={<UsersPage />} />
         <Route path="users/:id" element={<UserDetailPage />} />
         <Route path="items/:id" element={<ItemDetailPage />} />
