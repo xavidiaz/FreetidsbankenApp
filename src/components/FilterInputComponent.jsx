@@ -1,5 +1,4 @@
-import React from "react";
-import { Input } from "@/components/ui/Input";
+import { Input } from "@/components/ui/input";
 
 const FilterInputComponent = ({ store, filterKey, placeholder, onSearch }) => {
     const storeInstance = store ? store() : null; // Zustand store instance (if provided)

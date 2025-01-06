@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useReviewsStore, useItemsStore } from "@/store/useFreetidsbanken";
-import PageLayout from "@/Layouts/PageLayout";
 import { Link, useSearchParams } from "react-router-dom";
 import SkeletonPlaceholder from "@/components/SkeletonPlaceholder";
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useItemsStore, useReviewsStore, useShopsStore, useCategoriesStore } from "@/store/useFreetidsbanken";
 import DetailLayout from "@/Layouts/DetailLayout";
 import ReviewFormComponent from "@/components/ReviewFormComponent";
@@ -8,7 +8,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import Img from "@/components/Img";
 
 const ItemDetailPage = () => {

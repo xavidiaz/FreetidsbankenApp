@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useCartStore } from '@/store/useCartStore';
-import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/Input';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 const AddToCartButton = ({ item }) => {
     const cartStore = useCartStore();

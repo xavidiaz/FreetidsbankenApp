@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "@/components/ui/select";
 import { AlertCircle, Star } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import Img from "@/components/Img";
 
 const ReviewDetailPage = () => {
