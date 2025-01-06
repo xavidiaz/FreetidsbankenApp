@@ -2,28 +2,493 @@
     "Users": [
         {
             "user_id": 1,
-            "name": "Alice",
-            "email": "alice@x.com",
-            "phone": 9708996313,
-            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=8007",
-            "booking_history": [
-                {
-                    "booking_id": 1,
-                    "item_id": 5,
-                    "date_start": "2024-12-04",
-                    "date_end": "2024-12-23",
-                    "shop_id": 1,
-                    "status": "Completed"
-                }
-            ],
+            "name": "User 1",
+            "email": "user1@example.com",
+            "phone": "+46707032768",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=5222",
+            "booking_history": [],
             "reviews": [
-                1
+                1,
+                3
+            ],
+            "preferred_shop": 3,
+            "loans": [
+                7
+            ]
+        },
+        {
+            "user_id": 2,
+            "name": "User 2",
+            "email": "user2@example.com",
+            "phone": "+46704753857",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=5001",
+            "booking_history": [],
+            "reviews": [
+                14,
+                47,
+                66,
+                76,
+                82
+            ],
+            "preferred_shop": 3,
+            "loans": [
+                18,
+                23
+            ]
+        },
+        {
+            "user_id": 3,
+            "name": "User 3",
+            "email": "user3@example.com",
+            "phone": "+46705543616",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=6690",
+            "booking_history": [],
+            "reviews": [
+                4,
+                17,
+                20,
+                27,
+                75,
+                86
+            ],
+            "preferred_shop": 1,
+            "loans": []
+        },
+        {
+            "user_id": 4,
+            "name": "User 4",
+            "email": "user4@example.com",
+            "phone": "+46701050247",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=3152",
+            "booking_history": [],
+            "reviews": [
+                48
+            ],
+            "preferred_shop": 3,
+            "loans": [
+                3,
+                13
+            ]
+        },
+        {
+            "user_id": 5,
+            "name": "User 5",
+            "email": "user5@example.com",
+            "phone": "+46702520421",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=4896",
+            "booking_history": [],
+            "reviews": [
+                30,
+                33,
+                65
+            ],
+            "preferred_shop": 1,
+            "loans": [
+                17
+            ]
+        },
+        {
+            "user_id": 6,
+            "name": "User 6",
+            "email": "user6@example.com",
+            "phone": "+46707339246",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=7322",
+            "booking_history": [],
+            "reviews": [
+                59,
+                63,
+                77
+            ],
+            "preferred_shop": 1,
+            "loans": [
+                1,
+                16
+            ]
+        },
+        {
+            "user_id": 7,
+            "name": "User 7",
+            "email": "user7@example.com",
+            "phone": "+46701215857",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=5284",
+            "booking_history": [],
+            "reviews": [
+                6
+            ],
+            "preferred_shop": 2,
+            "loans": []
+        },
+        {
+            "user_id": 8,
+            "name": "User 8",
+            "email": "user8@example.com",
+            "phone": "+46707084213",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=6222",
+            "booking_history": [],
+            "reviews": [],
+            "preferred_shop": 3,
+            "loans": [
+                5
+            ]
+        },
+        {
+            "user_id": 9,
+            "name": "User 9",
+            "email": "user9@example.com",
+            "phone": "+46705902484",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=1042",
+            "booking_history": [],
+            "reviews": [
+                51,
+                88
+            ],
+            "preferred_shop": 3,
+            "loans": [
+                20
+            ]
+        },
+        {
+            "user_id": 10,
+            "name": "User 10",
+            "email": "user10@example.com",
+            "phone": "+46702765842",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=4602",
+            "booking_history": [],
+            "reviews": [],
+            "preferred_shop": 2,
+            "loans": [
+                8,
+                12
+            ]
+        },
+        {
+            "user_id": 11,
+            "name": "User 11",
+            "email": "user11@example.com",
+            "phone": "+46707476974",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=8038",
+            "booking_history": [],
+            "reviews": [
+                19,
+                32,
+                57,
+                68
+            ],
+            "preferred_shop": 3,
+            "loans": [
+                2,
+                15
+            ]
+        },
+        {
+            "user_id": 12,
+            "name": "User 12",
+            "email": "user12@example.com",
+            "phone": "+46701649098",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=4464",
+            "booking_history": [],
+            "reviews": [
+                24,
+                31,
+                64
+            ],
+            "preferred_shop": 3,
+            "loans": []
+        },
+        {
+            "user_id": 13,
+            "name": "User 13",
+            "email": "user13@example.com",
+            "phone": "+46709327529",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=8556",
+            "booking_history": [],
+            "reviews": [
+                43,
+                54,
+                55,
+                81
             ],
             "preferred_shop": 2,
             "loans": [
-                1,
-                2
+                9
             ]
+        },
+        {
+            "user_id": 14,
+            "name": "User 14",
+            "email": "user14@example.com",
+            "phone": "+46706427585",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=9240",
+            "booking_history": [],
+            "reviews": [
+                13,
+                35,
+                61,
+                90
+            ],
+            "preferred_shop": 2,
+            "loans": []
+        },
+        {
+            "user_id": 15,
+            "name": "User 15",
+            "email": "user15@example.com",
+            "phone": "+46708309300",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=7597",
+            "booking_history": [],
+            "reviews": [
+                41,
+                87
+            ],
+            "preferred_shop": 1,
+            "loans": []
+        },
+        {
+            "user_id": 16,
+            "name": "User 16",
+            "email": "user16@example.com",
+            "phone": "+46706634336",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=8322",
+            "booking_history": [],
+            "reviews": [
+                5,
+                70,
+                89
+            ],
+            "preferred_shop": 2,
+            "loans": []
+        },
+        {
+            "user_id": 17,
+            "name": "User 17",
+            "email": "user17@example.com",
+            "phone": "+46702735355",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=9706",
+            "booking_history": [],
+            "reviews": [
+                16,
+                18,
+                40,
+                46,
+                53,
+                56,
+                62,
+                74
+            ],
+            "preferred_shop": 1,
+            "loans": [
+                6
+            ]
+        },
+        {
+            "user_id": 18,
+            "name": "User 18",
+            "email": "user18@example.com",
+            "phone": "+46704866515",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=2040",
+            "booking_history": [],
+            "reviews": [
+                8,
+                42,
+                60,
+                84
+            ],
+            "preferred_shop": 3,
+            "loans": []
+        },
+        {
+            "user_id": 19,
+            "name": "User 19",
+            "email": "user19@example.com",
+            "phone": "+46703659665",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=3215",
+            "booking_history": [],
+            "reviews": [
+                21
+            ],
+            "preferred_shop": 2,
+            "loans": [
+                4
+            ]
+        },
+        {
+            "user_id": 20,
+            "name": "User 20",
+            "email": "user20@example.com",
+            "phone": "+46704160377",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=4374",
+            "booking_history": [],
+            "reviews": [
+                26,
+                28,
+                73,
+                79,
+                83
+            ],
+            "preferred_shop": 2,
+            "loans": [
+                22
+            ]
+        },
+        {
+            "user_id": 21,
+            "name": "User 21",
+            "email": "user21@example.com",
+            "phone": "+46707332479",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=1147",
+            "booking_history": [],
+            "reviews": [
+                2
+            ],
+            "preferred_shop": 1,
+            "loans": [
+                11
+            ]
+        },
+        {
+            "user_id": 22,
+            "name": "User 22",
+            "email": "user22@example.com",
+            "phone": "+46708555478",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=7234",
+            "booking_history": [],
+            "reviews": [
+                9,
+                39,
+                52
+            ],
+            "preferred_shop": 1,
+            "loans": []
+        },
+        {
+            "user_id": 23,
+            "name": "User 23",
+            "email": "user23@example.com",
+            "phone": "+46701360674",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=5848",
+            "booking_history": [],
+            "reviews": [
+                7,
+                22,
+                38,
+                44,
+                45,
+                58
+            ],
+            "preferred_shop": 3,
+            "loans": []
+        },
+        {
+            "user_id": 24,
+            "name": "User 24",
+            "email": "user24@example.com",
+            "phone": "+46703722388",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=5788",
+            "booking_history": [],
+            "reviews": [
+                12,
+                25
+            ],
+            "preferred_shop": 3,
+            "loans": [
+                19,
+                21
+            ]
+        },
+        {
+            "user_id": 25,
+            "name": "User 25",
+            "email": "user25@example.com",
+            "phone": "+46701115580",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=8013",
+            "booking_history": [],
+            "reviews": [
+                34,
+                37
+            ],
+            "preferred_shop": 1,
+            "loans": []
+        },
+        {
+            "user_id": 26,
+            "name": "User 26",
+            "email": "user26@example.com",
+            "phone": "+46707879069",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=4116",
+            "booking_history": [],
+            "reviews": [
+                11,
+                36,
+                50,
+                72
+            ],
+            "preferred_shop": 2,
+            "loans": []
+        },
+        {
+            "user_id": 27,
+            "name": "User 27",
+            "email": "user27@example.com",
+            "phone": "+46707842349",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=7328",
+            "booking_history": [],
+            "reviews": [
+                15,
+                49,
+                69,
+                80,
+                85
+            ],
+            "preferred_shop": 1,
+            "loans": [
+                24
+            ]
+        },
+        {
+            "user_id": 28,
+            "name": "User 28",
+            "email": "user28@example.com",
+            "phone": "+46705518146",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=3461",
+            "booking_history": [],
+            "reviews": [
+                23,
+                29,
+                71
+            ],
+            "preferred_shop": 3,
+            "loans": [
+                10
+            ]
+        },
+        {
+            "user_id": 29,
+            "name": "User 29",
+            "email": "user29@example.com",
+            "phone": "+46706589908",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=5200",
+            "booking_history": [],
+            "reviews": [
+                67
+            ],
+            "preferred_shop": 3,
+            "loans": [
+                14
+            ]
+        },
+        {
+            "user_id": 30,
+            "name": "User 30",
+            "email": "user30@example.com",
+            "phone": "+46708977210",
+            "profile_image": "https://api.dicebear.com/7.x/avataaars/svg?seed=5804",
+            "booking_history": [],
+            "reviews": [
+                10,
+                78
+            ],
+            "preferred_shop": 1,
+            "loans": []
         }
     ],
     "Shops": [
@@ -66,381 +531,2542 @@
         {
             "category_id": 5,
             "name": "Cycling"
+        },
+        {
+            "category_id": 6,
+            "name": "Hiking"
+        },
+        {
+            "category_id": 7,
+            "name": "Swimming"
+        },
+        {
+            "category_id": 8,
+            "name": "Skiing"
+        },
+        {
+            "category_id": 9,
+            "name": "Badminton"
+        },
+        {
+            "category_id": 10,
+            "name": "Golf"
         }
     ],
     "Items": [
         {
             "item_id": 1,
-            "name": "Basketball Gear 1",
-            "description": "High-quality Basketball gear.",
-            "category_id": 2,
-            "stock_quantity": 10,
-            "shop_id": 2,
-            "thumbnail": "https://images.pexels.com/photos/9560/pexels-photo.jpg",
+            "name": "Adidas Predator Football Boots",
+            "description": "Top-tier football cleats for firm ground grip.",
+            "category_id": 8,
+            "stock_quantity": 18,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/4995/pexels-photo.jpg",
             "gallery": [
-                "https://images.pexels.com/photos/8862/pexels-photo.jpg",
-                "https://images.pexels.com/photos/7782/pexels-photo.jpg"
+                "https://images.pexels.com/photos/2908/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3795/pexels-photo.jpg"
             ],
-            "reviews": [
-                1,
-                7
-            ],
-            "dates_reserved": [
-                [
-                    "2025-01-12",
-                    "2025-01-21"
-                ]
-            ]
+            "reviews": [],
+            "dates_reserved": []
         },
         {
             "item_id": 2,
-            "name": "Basketball Gear 2",
-            "description": "Durable and lightweight basketball gear.",
-            "category_id": 2,
-            "stock_quantity": 8,
-            "shop_id": 1,
-            "thumbnail": "https://images.pexels.com/photos/3652/pexels-photo.jpg",
+            "name": "Nike Air Zoom Pegasus",
+            "description": "Cushioned running shoes with superior comfort.",
+            "category_id": 5,
+            "stock_quantity": 12,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/8270/pexels-photo.jpg",
             "gallery": [
-                "https://images.pexels.com/photos/12345/pexels-photo.jpg",
-                "https://images.pexels.com/photos/6789/pexels-photo.jpg"
+                "https://images.pexels.com/photos/2420/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4525/pexels-photo.jpg"
             ],
             "reviews": [
-                2,
-                8,
-                9
+                53
             ],
-            "dates_reserved": [
-                [
-                    "2025-02-01",
-                    "2025-02-10"
-                ]
-            ]
+            "dates_reserved": []
         },
         {
             "item_id": 3,
-            "name": "Football Cleats",
-            "description": "Professional football cleats for enhanced grip.",
-            "category_id": 1,
-            "stock_quantity": 15,
-            "shop_id": 3,
-            "thumbnail": "https://images.pexels.com/photos/10545/pexels-photo.jpg",
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 8,
+            "stock_quantity": 16,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/1442/pexels-photo.jpg",
             "gallery": [
-                "https://images.pexels.com/photos/9987/pexels-photo.jpg",
-                "https://images.pexels.com/photos/3321/pexels-photo.jpg"
+                "https://images.pexels.com/photos/6217/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4152/pexels-photo.jpg"
             ],
             "reviews": [
-                3,
-                10,
-                11
+                55
             ],
-            "dates_reserved": [
-                [
-                    "2025-03-05",
-                    "2025-03-15"
-                ]
-            ]
+            "dates_reserved": []
         },
         {
             "item_id": 4,
-            "name": "Tennis Racket",
-            "description": "Lightweight tennis racket for improved swing control.",
-            "category_id": 3,
-            "stock_quantity": 5,
+            "name": "Nike Air Zoom Pegasus",
+            "description": "Cushioned running shoes with superior comfort.",
+            "category_id": 5,
+            "stock_quantity": 13,
             "shop_id": 2,
-            "thumbnail": "https://images.pexels.com/photos/4475/pexels-photo.jpg",
+            "thumbnail": "https://images.pexels.com/photos/2189/pexels-photo.jpg",
             "gallery": [
-                "https://images.pexels.com/photos/8874/pexels-photo.jpg",
-                "https://images.pexels.com/photos/5551/pexels-photo.jpg"
+                "https://images.pexels.com/photos/7676/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8670/pexels-photo.jpg"
             ],
-            "reviews": [
-                4,
-                12
-            ],
-            "dates_reserved": [
-                [
-                    "2025-02-15",
-                    "2025-02-20"
-                ]
-            ]
+            "reviews": [],
+            "dates_reserved": []
         },
         {
             "item_id": 5,
-            "name": "Running Shoes",
-            "description": "Comfortable running shoes with superior cushioning.",
-            "category_id": 4,
-            "stock_quantity": 20,
-            "shop_id": 4,
-            "thumbnail": "https://images.pexels.com/photos/19042/pexels-photo.jpg",
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 7,
+            "stock_quantity": 7,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/3806/pexels-photo.jpg",
             "gallery": [
-                "https://images.pexels.com/photos/3434/pexels-photo.jpg",
-                "https://images.pexels.com/photos/8733/pexels-photo.jpg"
+                "https://images.pexels.com/photos/6610/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1123/pexels-photo.jpg"
             ],
             "reviews": [
-                5,
-                13,
-                14
+                9
             ],
-            "dates_reserved": [
-                [
-                    "2025-04-10",
-                    "2025-04-25"
-                ]
-            ]
+            "dates_reserved": []
         },
         {
             "item_id": 6,
-            "name": "Cycling Helmet",
-            "description": "Advanced cycling helmet with high-impact resistance.",
-            "category_id": 5,
-            "stock_quantity": 12,
-            "shop_id": 5,
-            "thumbnail": "https://images.pexels.com/photos/5421/pexels-photo.jpg",
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 3,
+            "stock_quantity": 13,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/2347/pexels-photo.jpg",
             "gallery": [
-                "https://images.pexels.com/photos/7392/pexels-photo.jpg",
-                "https://images.pexels.com/photos/6451/pexels-photo.jpg"
+                "https://images.pexels.com/photos/6829/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6993/pexels-photo.jpg"
+            ],
+            "reviews": [
+                69,
+                77
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 7,
+            "name": "Adidas Predator Football Boots",
+            "description": "Top-tier football cleats for firm ground grip.",
+            "category_id": 3,
+            "stock_quantity": 13,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/2208/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/6710/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1250/pexels-photo.jpg"
+            ],
+            "reviews": [
+                29,
+                73,
+                80
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 8,
+            "name": "Adidas Predator Football Boots",
+            "description": "Top-tier football cleats for firm ground grip.",
+            "category_id": 6,
+            "stock_quantity": 19,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/8873/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3247/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7351/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 9,
+            "name": "Nike Air Zoom Pegasus",
+            "description": "Cushioned running shoes with superior comfort.",
+            "category_id": 4,
+            "stock_quantity": 20,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/3946/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/2090/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2374/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 10,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 2,
+            "stock_quantity": 15,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/1002/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/4486/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7295/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 11,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 4,
+            "stock_quantity": 8,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/6445/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/4087/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5376/pexels-photo.jpg"
+            ],
+            "reviews": [
+                36
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 12,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 4,
+            "stock_quantity": 6,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/1163/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/1981/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8571/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 13,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 8,
+            "stock_quantity": 6,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/5987/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8341/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7650/pexels-photo.jpg"
+            ],
+            "reviews": [
+                28,
+                46,
+                66
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 14,
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 10,
+            "stock_quantity": 11,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/4782/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/5780/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6400/pexels-photo.jpg"
+            ],
+            "reviews": [
+                43
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 15,
+            "name": "Wilson Evolution Basketball",
+            "description": "Premium indoor basketball with excellent grip.",
+            "category_id": 7,
+            "stock_quantity": 7,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/3780/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/4762/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7781/pexels-photo.jpg"
+            ],
+            "reviews": [
+                68
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 16,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 7,
+            "stock_quantity": 10,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/9068/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9249/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9973/pexels-photo.jpg"
+            ],
+            "reviews": [
+                51,
+                86
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 17,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 7,
+            "stock_quantity": 14,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/2828/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7539/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6907/pexels-photo.jpg"
+            ],
+            "reviews": [
+                22
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 18,
+            "name": "Wilson Evolution Basketball",
+            "description": "Premium indoor basketball with excellent grip.",
+            "category_id": 10,
+            "stock_quantity": 10,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/7522/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/2790/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9744/pexels-photo.jpg"
+            ],
+            "reviews": [
+                58
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 19,
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 2,
+            "stock_quantity": 20,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/7080/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7243/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5419/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 20,
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 10,
+            "stock_quantity": 6,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/5143/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9749/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7867/pexels-photo.jpg"
+            ],
+            "reviews": [
+                35
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 21,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 6,
+            "stock_quantity": 6,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/7744/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/6236/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2274/pexels-photo.jpg"
+            ],
+            "reviews": [
+                75
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 22,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 1,
+            "stock_quantity": 14,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/7129/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/4816/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2755/pexels-photo.jpg"
+            ],
+            "reviews": [
+                20,
+                52
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 23,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 8,
+            "stock_quantity": 19,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/1985/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/4486/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9053/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 24,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 7,
+            "stock_quantity": 10,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/3614/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/1945/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3091/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 25,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 4,
+            "stock_quantity": 19,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/3568/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7203/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7451/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 26,
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 10,
+            "stock_quantity": 14,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/7645/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7169/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4769/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 27,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 10,
+            "stock_quantity": 9,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/4278/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/1533/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2458/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 28,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 8,
+            "stock_quantity": 15,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/7929/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/5692/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6251/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 29,
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 6,
+            "stock_quantity": 14,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/3367/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/6720/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7727/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 30,
+            "name": "Wilson Evolution Basketball",
+            "description": "Premium indoor basketball with excellent grip.",
+            "category_id": 9,
+            "stock_quantity": 14,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/9917/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/4631/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9924/pexels-photo.jpg"
+            ],
+            "reviews": [
+                26
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 31,
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 4,
+            "stock_quantity": 17,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/1129/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7468/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5293/pexels-photo.jpg"
+            ],
+            "reviews": [
+                65
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 32,
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 3,
+            "stock_quantity": 12,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/5757/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7902/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3772/pexels-photo.jpg"
+            ],
+            "reviews": [
+                39
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 33,
+            "name": "TaylorMade M2 Golf Club",
+            "description": "Forged golf club for increased distance control.",
+            "category_id": 7,
+            "stock_quantity": 18,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/5100/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/6613/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9624/pexels-photo.jpg"
+            ],
+            "reviews": [
+                16,
+                64
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 34,
+            "name": "TaylorMade M2 Golf Club",
+            "description": "Forged golf club for increased distance control.",
+            "category_id": 10,
+            "stock_quantity": 5,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/5016/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3443/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8091/pexels-photo.jpg"
+            ],
+            "reviews": [
+                71
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 35,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 1,
+            "stock_quantity": 8,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/5376/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7542/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5415/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 36,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 6,
+            "stock_quantity": 11,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/9728/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8390/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2371/pexels-photo.jpg"
+            ],
+            "reviews": [
+                79
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 37,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 3,
+            "stock_quantity": 20,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/9268/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3055/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1896/pexels-photo.jpg"
+            ],
+            "reviews": [
+                14,
+                72
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 38,
+            "name": "Head Graphene Tennis Racket",
+            "description": "Lightweight tennis racket for better swings.",
+            "category_id": 7,
+            "stock_quantity": 16,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/7459/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7516/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8036/pexels-photo.jpg"
+            ],
+            "reviews": [
+                31
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 39,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 1,
+            "stock_quantity": 12,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/8096/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/6524/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3692/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 40,
+            "name": "Head Graphene Tennis Racket",
+            "description": "Lightweight tennis racket for better swings.",
+            "category_id": 5,
+            "stock_quantity": 10,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/5799/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/6095/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9509/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 41,
+            "name": "Head Graphene Tennis Racket",
+            "description": "Lightweight tennis racket for better swings.",
+            "category_id": 4,
+            "stock_quantity": 7,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/2152/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7279/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8231/pexels-photo.jpg"
+            ],
+            "reviews": [
+                88
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 42,
+            "name": "Adidas Predator Football Boots",
+            "description": "Top-tier football cleats for firm ground grip.",
+            "category_id": 6,
+            "stock_quantity": 11,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/7787/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/4548/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6320/pexels-photo.jpg"
+            ],
+            "reviews": [
+                33
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 43,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 2,
+            "stock_quantity": 13,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/9280/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3893/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4007/pexels-photo.jpg"
+            ],
+            "reviews": [
+                45
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 44,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 10,
+            "stock_quantity": 19,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/5245/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7003/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8256/pexels-photo.jpg"
+            ],
+            "reviews": [
+                11,
+                32
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 45,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 9,
+            "stock_quantity": 16,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/7721/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9361/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4156/pexels-photo.jpg"
+            ],
+            "reviews": [
+                10
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 46,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 5,
+            "stock_quantity": 13,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/3160/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7123/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2924/pexels-photo.jpg"
+            ],
+            "reviews": [
+                5,
+                42
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 47,
+            "name": "Nike Air Zoom Pegasus",
+            "description": "Cushioned running shoes with superior comfort.",
+            "category_id": 6,
+            "stock_quantity": 18,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/6441/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/5099/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2773/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 48,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 3,
+            "stock_quantity": 16,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/1270/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/6317/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4156/pexels-photo.jpg"
             ],
             "reviews": [
                 6,
-                15,
-                16
+                12,
+                18
             ],
-            "dates_reserved": [
-                [
-                    "2025-01-22",
-                    "2025-01-30"
-                ]
-            ]
+            "dates_reserved": []
+        },
+        {
+            "item_id": 49,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 8,
+            "stock_quantity": 18,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/5471/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/1308/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2012/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 50,
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 10,
+            "stock_quantity": 14,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/6009/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/2387/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7340/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 51,
+            "name": "Adidas Predator Football Boots",
+            "description": "Top-tier football cleats for firm ground grip.",
+            "category_id": 1,
+            "stock_quantity": 15,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/3047/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7943/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7628/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 52,
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 7,
+            "stock_quantity": 12,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/8292/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3990/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6060/pexels-photo.jpg"
+            ],
+            "reviews": [
+                54,
+                84
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 53,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 8,
+            "stock_quantity": 14,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/6636/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3507/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9295/pexels-photo.jpg"
+            ],
+            "reviews": [
+                2,
+                13
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 54,
+            "name": "Adidas Predator Football Boots",
+            "description": "Top-tier football cleats for firm ground grip.",
+            "category_id": 4,
+            "stock_quantity": 14,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/7844/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/5476/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6468/pexels-photo.jpg"
+            ],
+            "reviews": [
+                3,
+                7,
+                23,
+                67
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 55,
+            "name": "Adidas Predator Football Boots",
+            "description": "Top-tier football cleats for firm ground grip.",
+            "category_id": 5,
+            "stock_quantity": 7,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/4779/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9234/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2671/pexels-photo.jpg"
+            ],
+            "reviews": [
+                4
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 56,
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 2,
+            "stock_quantity": 19,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/7843/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7860/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1168/pexels-photo.jpg"
+            ],
+            "reviews": [
+                21,
+                48,
+                76
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 57,
+            "name": "TaylorMade M2 Golf Club",
+            "description": "Forged golf club for increased distance control.",
+            "category_id": 6,
+            "stock_quantity": 17,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/1848/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9097/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7320/pexels-photo.jpg"
+            ],
+            "reviews": [
+                81
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 58,
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 9,
+            "stock_quantity": 16,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/2887/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/1159/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8976/pexels-photo.jpg"
+            ],
+            "reviews": [
+                19,
+                57
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 59,
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 3,
+            "stock_quantity": 18,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/5229/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9737/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3723/pexels-photo.jpg"
+            ],
+            "reviews": [
+                70
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 60,
+            "name": "Head Graphene Tennis Racket",
+            "description": "Lightweight tennis racket for better swings.",
+            "category_id": 10,
+            "stock_quantity": 15,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/2354/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/2518/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2067/pexels-photo.jpg"
+            ],
+            "reviews": [
+                44,
+                56
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 61,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 1,
+            "stock_quantity": 5,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/3892/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7332/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5036/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 62,
+            "name": "Nike Air Zoom Pegasus",
+            "description": "Cushioned running shoes with superior comfort.",
+            "category_id": 7,
+            "stock_quantity": 19,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/7423/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3094/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7479/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 63,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 7,
+            "stock_quantity": 11,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/5990/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8773/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2193/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 64,
+            "name": "Wilson Evolution Basketball",
+            "description": "Premium indoor basketball with excellent grip.",
+            "category_id": 9,
+            "stock_quantity": 19,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/6532/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3967/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8771/pexels-photo.jpg"
+            ],
+            "reviews": [
+                40
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 65,
+            "name": "Wilson Evolution Basketball",
+            "description": "Premium indoor basketball with excellent grip.",
+            "category_id": 6,
+            "stock_quantity": 16,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/6227/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/5074/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2899/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 66,
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 3,
+            "stock_quantity": 19,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/9016/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/2995/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3781/pexels-photo.jpg"
+            ],
+            "reviews": [
+                90
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 67,
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 6,
+            "stock_quantity": 15,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/8760/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9618/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9594/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 68,
+            "name": "Wilson Evolution Basketball",
+            "description": "Premium indoor basketball with excellent grip.",
+            "category_id": 6,
+            "stock_quantity": 11,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/5050/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8857/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1516/pexels-photo.jpg"
+            ],
+            "reviews": [
+                63
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 69,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 7,
+            "stock_quantity": 14,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/4407/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7075/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1625/pexels-photo.jpg"
+            ],
+            "reviews": [
+                1,
+                50
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 70,
+            "name": "Nike Air Zoom Pegasus",
+            "description": "Cushioned running shoes with superior comfort.",
+            "category_id": 7,
+            "stock_quantity": 19,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/5894/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/2300/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1881/pexels-photo.jpg"
+            ],
+            "reviews": [
+                41
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 71,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 1,
+            "stock_quantity": 18,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/1484/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7539/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1992/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 72,
+            "name": "Wilson Evolution Basketball",
+            "description": "Premium indoor basketball with excellent grip.",
+            "category_id": 5,
+            "stock_quantity": 16,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/4160/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7932/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5369/pexels-photo.jpg"
+            ],
+            "reviews": [
+                62
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 73,
+            "name": "TaylorMade M2 Golf Club",
+            "description": "Forged golf club for increased distance control.",
+            "category_id": 6,
+            "stock_quantity": 11,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/5215/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8225/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6766/pexels-photo.jpg"
+            ],
+            "reviews": [
+                15
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 74,
+            "name": "Nike Air Zoom Pegasus",
+            "description": "Cushioned running shoes with superior comfort.",
+            "category_id": 3,
+            "stock_quantity": 18,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/8240/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/4429/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3240/pexels-photo.jpg"
+            ],
+            "reviews": [
+                25
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 75,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 1,
+            "stock_quantity": 7,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/3149/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3699/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2799/pexels-photo.jpg"
+            ],
+            "reviews": [
+                47,
+                82,
+                89
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 76,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 9,
+            "stock_quantity": 17,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/5867/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/7397/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2494/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 77,
+            "name": "Wilson Evolution Basketball",
+            "description": "Premium indoor basketball with excellent grip.",
+            "category_id": 7,
+            "stock_quantity": 13,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/8807/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3177/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1371/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 78,
+            "name": "Nike Air Zoom Pegasus",
+            "description": "Cushioned running shoes with superior comfort.",
+            "category_id": 9,
+            "stock_quantity": 20,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/8849/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3106/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1044/pexels-photo.jpg"
+            ],
+            "reviews": [
+                37,
+                59
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 79,
+            "name": "Nike Air Zoom Pegasus",
+            "description": "Cushioned running shoes with superior comfort.",
+            "category_id": 1,
+            "stock_quantity": 12,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/4254/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/1661/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6215/pexels-photo.jpg"
+            ],
+            "reviews": [
+                49,
+                78
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 80,
+            "name": "Adidas Predator Football Boots",
+            "description": "Top-tier football cleats for firm ground grip.",
+            "category_id": 9,
+            "stock_quantity": 10,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/7391/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8247/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4523/pexels-photo.jpg"
+            ],
+            "reviews": [
+                34,
+                74,
+                83,
+                87
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 81,
+            "name": "Atomic Vantage Ski Set",
+            "description": "All-mountain ski set with bindings included.",
+            "category_id": 1,
+            "stock_quantity": 9,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/3242/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/1128/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2788/pexels-photo.jpg"
+            ],
+            "reviews": [
+                17,
+                85
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 82,
+            "name": "Head Graphene Tennis Racket",
+            "description": "Lightweight tennis racket for better swings.",
+            "category_id": 6,
+            "stock_quantity": 20,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/8957/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/3313/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2587/pexels-photo.jpg"
+            ],
+            "reviews": [
+                38
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 83,
+            "name": "Yonex Arcsaber Badminton Racket",
+            "description": "High-precision badminton racket for control.",
+            "category_id": 2,
+            "stock_quantity": 17,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/3899/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/2629/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5661/pexels-photo.jpg"
+            ],
+            "reviews": [
+                27,
+                61
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 84,
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 4,
+            "stock_quantity": 10,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/1098/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8071/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5945/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 85,
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 3,
+            "stock_quantity": 9,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/3357/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/6981/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3764/pexels-photo.jpg"
+            ],
+            "reviews": [
+                30
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 86,
+            "name": "TaylorMade M2 Golf Club",
+            "description": "Forged golf club for increased distance control.",
+            "category_id": 3,
+            "stock_quantity": 19,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/9256/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9391/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1000/pexels-photo.jpg"
+            ],
+            "reviews": [
+                60
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 87,
+            "name": "Head Graphene Tennis Racket",
+            "description": "Lightweight tennis racket for better swings.",
+            "category_id": 1,
+            "stock_quantity": 8,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/7487/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/1219/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6155/pexels-photo.jpg"
+            ],
+            "reviews": [
+                24
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 88,
+            "name": "Speedo Fastskin Swim Goggles",
+            "description": "Hydrodynamic swim goggles for professional use.",
+            "category_id": 1,
+            "stock_quantity": 13,
+            "shop_id": 1,
+            "thumbnail": "https://images.pexels.com/photos/1668/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/8223/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3914/pexels-photo.jpg"
+            ],
+            "reviews": [
+                8
+            ],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 89,
+            "name": "Scott Speedster Road Bike",
+            "description": "Aerodynamic road bike designed for speed.",
+            "category_id": 10,
+            "stock_quantity": 19,
+            "shop_id": 2,
+            "thumbnail": "https://images.pexels.com/photos/7052/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/9456/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2944/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
+        },
+        {
+            "item_id": 90,
+            "name": "Decathlon Hiking Backpack 50L",
+            "description": "Spacious and durable hiking backpack.",
+            "category_id": 6,
+            "stock_quantity": 15,
+            "shop_id": 3,
+            "thumbnail": "https://images.pexels.com/photos/7041/pexels-photo.jpg",
+            "gallery": [
+                "https://images.pexels.com/photos/1233/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6933/pexels-photo.jpg"
+            ],
+            "reviews": [],
+            "dates_reserved": []
         }
     ],
     "Reviews": [
         {
             "review_id": 1,
-            "user_id": 3,
-            "item_id": 1,
+            "user_id": 1,
+            "item_id": 69,
             "rating": 5,
-            "comment": "Fantastic basketball gear! Very comfortable.",
-            "date": "2024-12-23"
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-10-10"
         },
         {
             "review_id": 2,
-            "user_id": 5,
-            "item_id": 2,
-            "rating": 4,
-            "comment": "Great quality, but a little expensive.",
-            "date": "2024-12-19"
+            "user_id": 21,
+            "item_id": 53,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-03-05"
         },
         {
             "review_id": 3,
-            "user_id": 7,
-            "item_id": 3,
-            "rating": 5,
-            "comment": "Perfect cleats for any football player!",
-            "date": "2024-12-10"
+            "user_id": 1,
+            "item_id": 54,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-03-29"
         },
         {
             "review_id": 4,
-            "user_id": 4,
-            "item_id": 4,
-            "rating": 4,
-            "comment": "Good control but a bit heavy for my taste.",
-            "date": "2024-12-25"
+            "user_id": 3,
+            "item_id": 55,
+            "rating": 3,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-06-22"
         },
         {
             "review_id": 5,
-            "user_id": 9,
-            "item_id": 5,
-            "rating": 5,
-            "comment": "These running shoes are amazing!",
-            "date": "2024-12-28"
+            "user_id": 16,
+            "item_id": 46,
+            "rating": 4,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-04-28"
         },
         {
             "review_id": 6,
-            "user_id": 2,
-            "item_id": 6,
+            "user_id": 7,
+            "item_id": 48,
             "rating": 4,
-            "comment": "Feels secure and lightweight.",
-            "date": "2024-12-15"
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-11-07"
         },
         {
             "review_id": 7,
-            "user_id": 1,
-            "item_id": 1,
+            "user_id": 23,
+            "item_id": 54,
             "rating": 3,
-            "comment": "Decent but expected better durability.",
-            "date": "2024-12-18"
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-02-24"
         },
         {
             "review_id": 8,
-            "user_id": 6,
-            "item_id": 2,
-            "rating": 5,
-            "comment": "Superb design and material.",
-            "date": "2024-12-22"
+            "user_id": 18,
+            "item_id": 88,
+            "rating": 4,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-10-03"
         },
         {
             "review_id": 9,
-            "user_id": 8,
-            "item_id": 2,
-            "rating": 3,
-            "comment": "Not bad, but takes time to break in.",
-            "date": "2024-12-30"
+            "user_id": 22,
+            "item_id": 5,
+            "rating": 4,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-02-08"
         },
         {
             "review_id": 10,
-            "user_id": 10,
-            "item_id": 3,
-            "rating": 4,
-            "comment": "Excellent grip, but runs a bit small.",
-            "date": "2025-01-02"
+            "user_id": 30,
+            "item_id": 45,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-12-10"
         },
         {
             "review_id": 11,
-            "user_id": 4,
-            "item_id": 3,
+            "user_id": 26,
+            "item_id": 44,
             "rating": 5,
-            "comment": "Would recommend to anyone!",
-            "date": "2025-01-05"
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-08-25"
         },
         {
             "review_id": 12,
-            "user_id": 5,
-            "item_id": 4,
-            "rating": 5,
-            "comment": "Perfect weight balance for precise shots.",
-            "date": "2025-01-08"
+            "user_id": 24,
+            "item_id": 48,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-12-08"
         },
         {
             "review_id": 13,
-            "user_id": 6,
-            "item_id": 5,
-            "rating": 4,
-            "comment": "Nice fit, but colors fade after washes.",
-            "date": "2025-01-10"
+            "user_id": 14,
+            "item_id": 53,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-12-11"
         },
         {
             "review_id": 14,
-            "user_id": 7,
-            "item_id": 5,
+            "user_id": 2,
+            "item_id": 37,
             "rating": 5,
-            "comment": "Best running shoes I've ever owned!",
-            "date": "2025-01-15"
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-06-15"
         },
         {
             "review_id": 15,
-            "user_id": 8,
-            "item_id": 6,
+            "user_id": 27,
+            "item_id": 73,
             "rating": 3,
-            "comment": "Good, but ventilation could be better.",
-            "date": "2025-01-20"
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-01-15"
         },
         {
             "review_id": 16,
+            "user_id": 17,
+            "item_id": 33,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-06-26"
+        },
+        {
+            "review_id": 17,
+            "user_id": 3,
+            "item_id": 81,
+            "rating": 4,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-11-24"
+        },
+        {
+            "review_id": 18,
+            "user_id": 17,
+            "item_id": 48,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-04-18"
+        },
+        {
+            "review_id": 19,
+            "user_id": 11,
+            "item_id": 58,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-09-05"
+        },
+        {
+            "review_id": 20,
+            "user_id": 3,
+            "item_id": 22,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-08-14"
+        },
+        {
+            "review_id": 21,
+            "user_id": 19,
+            "item_id": 56,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-03-02"
+        },
+        {
+            "review_id": 22,
+            "user_id": 23,
+            "item_id": 17,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-03-04"
+        },
+        {
+            "review_id": 23,
+            "user_id": 28,
+            "item_id": 54,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-02-20"
+        },
+        {
+            "review_id": 24,
+            "user_id": 12,
+            "item_id": 87,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-06-19"
+        },
+        {
+            "review_id": 25,
+            "user_id": 24,
+            "item_id": 74,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-10-25"
+        },
+        {
+            "review_id": 26,
+            "user_id": 20,
+            "item_id": 30,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-09-10"
+        },
+        {
+            "review_id": 27,
+            "user_id": 3,
+            "item_id": 83,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-12-25"
+        },
+        {
+            "review_id": 28,
+            "user_id": 20,
+            "item_id": 13,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-11-29"
+        },
+        {
+            "review_id": 29,
+            "user_id": 28,
+            "item_id": 7,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-08-12"
+        },
+        {
+            "review_id": 30,
+            "user_id": 5,
+            "item_id": 85,
+            "rating": 4,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-11-22"
+        },
+        {
+            "review_id": 31,
+            "user_id": 12,
+            "item_id": 38,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-06-15"
+        },
+        {
+            "review_id": 32,
+            "user_id": 11,
+            "item_id": 44,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2025-01-01"
+        },
+        {
+            "review_id": 33,
+            "user_id": 5,
+            "item_id": 42,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-09-27"
+        },
+        {
+            "review_id": 34,
+            "user_id": 25,
+            "item_id": 80,
+            "rating": 4,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-01-10"
+        },
+        {
+            "review_id": 35,
+            "user_id": 14,
+            "item_id": 20,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-06-10"
+        },
+        {
+            "review_id": 36,
+            "user_id": 26,
+            "item_id": 11,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-10-30"
+        },
+        {
+            "review_id": 37,
+            "user_id": 25,
+            "item_id": 78,
+            "rating": 5,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-02-04"
+        },
+        {
+            "review_id": 38,
+            "user_id": 23,
+            "item_id": 82,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-02-29"
+        },
+        {
+            "review_id": 39,
+            "user_id": 22,
+            "item_id": 32,
+            "rating": 3,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-09-15"
+        },
+        {
+            "review_id": 40,
+            "user_id": 17,
+            "item_id": 64,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-09-13"
+        },
+        {
+            "review_id": 41,
+            "user_id": 15,
+            "item_id": 70,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-04-18"
+        },
+        {
+            "review_id": 42,
+            "user_id": 18,
+            "item_id": 46,
+            "rating": 4,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-11-14"
+        },
+        {
+            "review_id": 43,
+            "user_id": 13,
+            "item_id": 14,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-06-11"
+        },
+        {
+            "review_id": 44,
+            "user_id": 23,
+            "item_id": 60,
+            "rating": 3,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-04-04"
+        },
+        {
+            "review_id": 45,
+            "user_id": 23,
+            "item_id": 43,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-11-30"
+        },
+        {
+            "review_id": 46,
+            "user_id": 17,
+            "item_id": 13,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-05-14"
+        },
+        {
+            "review_id": 47,
+            "user_id": 2,
+            "item_id": 75,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-04-23"
+        },
+        {
+            "review_id": 48,
+            "user_id": 4,
+            "item_id": 56,
+            "rating": 5,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-01-20"
+        },
+        {
+            "review_id": 49,
+            "user_id": 27,
+            "item_id": 79,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-01-19"
+        },
+        {
+            "review_id": 50,
+            "user_id": 26,
+            "item_id": 69,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-07-11"
+        },
+        {
+            "review_id": 51,
             "user_id": 9,
+            "item_id": 16,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-01-09"
+        },
+        {
+            "review_id": 52,
+            "user_id": 22,
+            "item_id": 22,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-03-20"
+        },
+        {
+            "review_id": 53,
+            "user_id": 17,
+            "item_id": 2,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-04-08"
+        },
+        {
+            "review_id": 54,
+            "user_id": 13,
+            "item_id": 52,
+            "rating": 3,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-01-26"
+        },
+        {
+            "review_id": 55,
+            "user_id": 13,
+            "item_id": 3,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-09-20"
+        },
+        {
+            "review_id": 56,
+            "user_id": 17,
+            "item_id": 60,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-05-07"
+        },
+        {
+            "review_id": 57,
+            "user_id": 11,
+            "item_id": 58,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-01-06"
+        },
+        {
+            "review_id": 58,
+            "user_id": 23,
+            "item_id": 18,
+            "rating": 4,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-12-15"
+        },
+        {
+            "review_id": 59,
+            "user_id": 6,
+            "item_id": 78,
+            "rating": 5,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-03-14"
+        },
+        {
+            "review_id": 60,
+            "user_id": 18,
+            "item_id": 86,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-02-09"
+        },
+        {
+            "review_id": 61,
+            "user_id": 14,
+            "item_id": 83,
+            "rating": 3,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-03-20"
+        },
+        {
+            "review_id": 62,
+            "user_id": 17,
+            "item_id": 72,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-08-14"
+        },
+        {
+            "review_id": 63,
+            "user_id": 6,
+            "item_id": 68,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-10-28"
+        },
+        {
+            "review_id": 64,
+            "user_id": 12,
+            "item_id": 33,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-09-19"
+        },
+        {
+            "review_id": 65,
+            "user_id": 5,
+            "item_id": 31,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-02-05"
+        },
+        {
+            "review_id": 66,
+            "user_id": 2,
+            "item_id": 13,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-10-09"
+        },
+        {
+            "review_id": 67,
+            "user_id": 29,
+            "item_id": 54,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-12-18"
+        },
+        {
+            "review_id": 68,
+            "user_id": 11,
+            "item_id": 15,
+            "rating": 3,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-12-13"
+        },
+        {
+            "review_id": 69,
+            "user_id": 27,
             "item_id": 6,
             "rating": 5,
-            "comment": "Fantastic helmet, super secure!",
-            "date": "2025-01-25"
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-10-13"
+        },
+        {
+            "review_id": 70,
+            "user_id": 16,
+            "item_id": 59,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-01-11"
+        },
+        {
+            "review_id": 71,
+            "user_id": 28,
+            "item_id": 34,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-01-20"
+        },
+        {
+            "review_id": 72,
+            "user_id": 26,
+            "item_id": 37,
+            "rating": 4,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-05-13"
+        },
+        {
+            "review_id": 73,
+            "user_id": 20,
+            "item_id": 7,
+            "rating": 4,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-07-19"
+        },
+        {
+            "review_id": 74,
+            "user_id": 17,
+            "item_id": 80,
+            "rating": 5,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-01-31"
+        },
+        {
+            "review_id": 75,
+            "user_id": 3,
+            "item_id": 21,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-09-05"
+        },
+        {
+            "review_id": 76,
+            "user_id": 2,
+            "item_id": 56,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-08-28"
+        },
+        {
+            "review_id": 77,
+            "user_id": 6,
+            "item_id": 6,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2025-01-01"
+        },
+        {
+            "review_id": 78,
+            "user_id": 30,
+            "item_id": 79,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-03-26"
+        },
+        {
+            "review_id": 79,
+            "user_id": 20,
+            "item_id": 36,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-09-01"
+        },
+        {
+            "review_id": 80,
+            "user_id": 27,
+            "item_id": 7,
+            "rating": 4,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-03-22"
+        },
+        {
+            "review_id": 81,
+            "user_id": 13,
+            "item_id": 57,
+            "rating": 5,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-03-13"
+        },
+        {
+            "review_id": 82,
+            "user_id": 2,
+            "item_id": 75,
+            "rating": 4,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-10-04"
+        },
+        {
+            "review_id": 83,
+            "user_id": 20,
+            "item_id": 80,
+            "rating": 4,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-06-10"
+        },
+        {
+            "review_id": 84,
+            "user_id": 18,
+            "item_id": 52,
+            "rating": 3,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2024-12-10"
+        },
+        {
+            "review_id": 85,
+            "user_id": 27,
+            "item_id": 81,
+            "rating": 5,
+            "comment": "Great product! Rated 5 stars.",
+            "date": "2025-01-04"
+        },
+        {
+            "review_id": 86,
+            "user_id": 3,
+            "item_id": 16,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-09-19"
+        },
+        {
+            "review_id": 87,
+            "user_id": 15,
+            "item_id": 80,
+            "rating": 3,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-02-11"
+        },
+        {
+            "review_id": 88,
+            "user_id": 9,
+            "item_id": 41,
+            "rating": 3,
+            "comment": "Great product! Rated 4 stars.",
+            "date": "2024-05-20"
+        },
+        {
+            "review_id": 89,
+            "user_id": 16,
+            "item_id": 75,
+            "rating": 4,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-02-12"
+        },
+        {
+            "review_id": 90,
+            "user_id": 14,
+            "item_id": 66,
+            "rating": 3,
+            "comment": "Great product! Rated 3 stars.",
+            "date": "2024-11-06"
         }
     ],
     "Loans": [
         {
             "loan_id": 1,
-            "user_id": 1,
+            "user_id": 6,
             "item_id": [
-                3,
-                5
+                74,
+                1,
+                69
             ],
             "shop_id": 2,
             "date_start": "2025-01-05",
-            "date_end": "2025-01-15",
-            "status": "Active"
+            "date_end": "2025-01-27",
+            "status": "Cancelled"
         },
         {
             "loan_id": 2,
-            "user_id": 1,
+            "user_id": 11,
             "item_id": [
-                2,
-                6
+                41
             ],
-            "shop_id": 1,
-            "date_start": "2024-12-20",
-            "date_end": "2025-01-02",
+            "shop_id": 2,
+            "date_start": "2025-01-04",
+            "date_end": "2025-02-11",
             "status": "Completed"
         },
         {
             "loan_id": 3,
-            "user_id": 2,
-            "item_id": [
-                1,
-                4,
-                7
-            ],
-            "shop_id": 3,
-            "date_start": "2025-01-10",
-            "date_end": "2025-01-20",
-            "status": "Active"
-        },
-        {
-            "loan_id": 4,
-            "user_id": 3,
-            "item_id": [
-                4,
-                8
-            ],
-            "shop_id": 1,
-            "date_start": "2024-12-28",
-            "date_end": "2025-01-12",
-            "status": "Pending"
-        },
-        {
-            "loan_id": 5,
-            "user_id": 1,
-            "item_id": [
-                2,
-                5
-            ],
-            "shop_id": 2,
-            "date_start": "2024-12-25",
-            "date_end": "2025-01-10",
-            "status": "Completed"
-        },
-        {
-            "loan_id": 6,
             "user_id": 4,
             "item_id": [
-                3,
-                7,
-                9
+                16,
+                8,
+                71
             ],
-            "shop_id": 2,
-            "date_start": "2025-01-03",
-            "date_end": "2025-01-18",
+            "shop_id": 3,
+            "date_start": "2024-12-30",
+            "date_end": "2025-01-23",
             "status": "Cancelled"
         },
         {
-            "loan_id": 7,
-            "user_id": 5,
+            "loan_id": 4,
+            "user_id": 19,
             "item_id": [
-                5,
-                6
+                33,
+                59,
+                69
+            ],
+            "shop_id": 2,
+            "date_start": "2024-12-25",
+            "date_end": "2025-01-19",
+            "status": "Active"
+        },
+        {
+            "loan_id": 5,
+            "user_id": 8,
+            "item_id": [
+                69,
+                81,
+                67
             ],
             "shop_id": 3,
-            "date_start": "2025-01-02",
-            "date_end": "2025-01-22",
+            "date_start": "2024-12-07",
+            "date_end": "2025-01-16",
+            "status": "Cancelled"
+        },
+        {
+            "loan_id": 6,
+            "user_id": 17,
+            "item_id": [
+                27
+            ],
+            "shop_id": 3,
+            "date_start": "2025-01-10",
+            "date_end": "2025-01-24",
+            "status": "Completed"
+        },
+        {
+            "loan_id": 7,
+            "user_id": 1,
+            "item_id": [
+                54,
+                78,
+                5
+            ],
+            "shop_id": 2,
+            "date_start": "2024-12-19",
+            "date_end": "2025-01-24",
             "status": "Active"
         },
         {
             "loan_id": 8,
+            "user_id": 10,
+            "item_id": [
+                12
+            ],
+            "shop_id": 1,
+            "date_start": "2025-01-05",
+            "date_end": "2025-02-10",
+            "status": "Cancelled"
+        },
+        {
+            "loan_id": 9,
+            "user_id": 13,
+            "item_id": [
+                13,
+                78
+            ],
+            "shop_id": 1,
+            "date_start": "2024-12-28",
+            "date_end": "2025-02-03",
+            "status": "Active"
+        },
+        {
+            "loan_id": 10,
+            "user_id": 28,
+            "item_id": [
+                62,
+                40,
+                84
+            ],
+            "shop_id": 1,
+            "date_start": "2024-12-17",
+            "date_end": "2025-01-22",
+            "status": "Cancelled"
+        },
+        {
+            "loan_id": 11,
+            "user_id": 21,
+            "item_id": [
+                4
+            ],
+            "shop_id": 1,
+            "date_start": "2024-12-11",
+            "date_end": "2025-01-31",
+            "status": "Active"
+        },
+        {
+            "loan_id": 12,
+            "user_id": 10,
+            "item_id": [
+                68,
+                57,
+                70
+            ],
+            "shop_id": 2,
+            "date_start": "2024-12-22",
+            "date_end": "2025-01-22",
+            "status": "Pending"
+        },
+        {
+            "loan_id": 13,
+            "user_id": 4,
+            "item_id": [
+                76,
+                10
+            ],
+            "shop_id": 3,
+            "date_start": "2025-01-14",
+            "date_end": "2025-01-28",
+            "status": "Pending"
+        },
+        {
+            "loan_id": 14,
+            "user_id": 29,
+            "item_id": [
+                23,
+                68,
+                57
+            ],
+            "shop_id": 2,
+            "date_start": "2024-12-18",
+            "date_end": "2025-01-17",
+            "status": "Active"
+        },
+        {
+            "loan_id": 15,
+            "user_id": 11,
+            "item_id": [
+                4
+            ],
+            "shop_id": 1,
+            "date_start": "2024-12-12",
+            "date_end": "2025-01-25",
+            "status": "Cancelled"
+        },
+        {
+            "loan_id": 16,
+            "user_id": 6,
+            "item_id": [
+                67,
+                90
+            ],
+            "shop_id": 1,
+            "date_start": "2024-12-07",
+            "date_end": "2025-02-04",
+            "status": "Active"
+        },
+        {
+            "loan_id": 17,
+            "user_id": 5,
+            "item_id": [
+                49,
+                15,
+                78
+            ],
+            "shop_id": 2,
+            "date_start": "2025-01-12",
+            "date_end": "2025-01-18",
+            "status": "Cancelled"
+        },
+        {
+            "loan_id": 18,
             "user_id": 2,
             "item_id": [
-                2,
-                4,
-                6
+                56,
+                14,
+                86
+            ],
+            "shop_id": 2,
+            "date_start": "2024-12-10",
+            "date_end": "2025-01-19",
+            "status": "Active"
+        },
+        {
+            "loan_id": 19,
+            "user_id": 24,
+            "item_id": [
+                80,
+                46
+            ],
+            "shop_id": 1,
+            "date_start": "2024-12-15",
+            "date_end": "2025-02-08",
+            "status": "Active"
+        },
+        {
+            "loan_id": 20,
+            "user_id": 9,
+            "item_id": [
+                40,
+                57
+            ],
+            "shop_id": 2,
+            "date_start": "2024-12-20",
+            "date_end": "2025-02-08",
+            "status": "Cancelled"
+        },
+        {
+            "loan_id": 21,
+            "user_id": 24,
+            "item_id": [
+                33
+            ],
+            "shop_id": 2,
+            "date_start": "2024-12-22",
+            "date_end": "2025-01-26",
+            "status": "Completed"
+        },
+        {
+            "loan_id": 22,
+            "user_id": 20,
+            "item_id": [
+                85,
+                17
+            ],
+            "shop_id": 3,
+            "date_start": "2025-01-04",
+            "date_end": "2025-02-08",
+            "status": "Pending"
+        },
+        {
+            "loan_id": 23,
+            "user_id": 2,
+            "item_id": [
+                36
+            ],
+            "shop_id": 1,
+            "date_start": "2024-12-19",
+            "date_end": "2025-02-12",
+            "status": "Active"
+        },
+        {
+            "loan_id": 24,
+            "user_id": 27,
+            "item_id": [
+                70,
+                77,
+                60
             ],
             "shop_id": 1,
             "date_start": "2025-01-07",
-            "date_end": "2025-01-17",
-            "status": "Completed"
+            "date_end": "2025-02-07",
+            "status": "Cancelled"
         }
     ]
 }

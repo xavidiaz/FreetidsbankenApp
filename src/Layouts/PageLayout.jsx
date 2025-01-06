@@ -1,7 +1,6 @@
 const PageLayout = ({ title, data, renderItem, entity }) => {
     return (
-        <div>
-            <h1>{title}</h1>
+        <div className="">
             <ul>
                 {data.map((item) => {
                     const itemId = item.item_id || item.user_id || item.loan_id || item.review_id || item.category_id;

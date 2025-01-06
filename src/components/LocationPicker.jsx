@@ -14,13 +14,13 @@ const LocationPicker = () => {
     const cartStore = useCartStore();
 
     return (
-        <div className="space-y-2">
+        <div className="">
             <Select
                 value={cartStore.selectedShop?.toString() || ""}
                 onValueChange={(value) => cartStore.setSelectedShop(Number(value))}
             >
-                <SelectTrigger className="w-full max-w-md">
-                    <SelectValue placeholder="Choose a Shop" />
+                <SelectTrigger className="h-12 min-w-fit">
+                    <SelectValue placeholder="Select Shop" />
                 </SelectTrigger>
                 <SelectContent>
                     <SelectGroup>

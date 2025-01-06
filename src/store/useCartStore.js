@@ -35,7 +35,7 @@ export const useCartStore = create((set, get) => ({
     // 🛒 Get total items in cart
     getTotalItems: () => get().cart.reduce((sum, item) => sum + item.quantity, 0),
 
-    // ➕ Add item to cart (persisted)
+    // ➕ Add item to cart (prevent duplicates)
     addToCart: (item) => {
         set((state) => {
             const existingItem = state.cart.find(cartItem => cartItem.item_id === item.item_id);
@@ -78,6 +78,20 @@ export const useCartStore = create((set, get) => ({
         });
     },
 
+    // 🔄 Set Shop for Pickup (for repeating loans)
+    setShop: (shopId) => {
+        if (!shopId) return;
+        localStorage.setItem("selectedShop", shopId);
+        set({ selectedShop: Number(shopId) });
+    },
+
+    // ✅ Ensure this function exists
+    setSelectedShop: (shopId) => {
+        if (!shopId) return;
+        localStorage.setItem("selectedShop", shopId);
+        set({ selectedShop: Number(shopId) });
+    },
+
     // 🚮 **Clear Cart**
     clearCart: () => {
         localStorage.removeItem("cart");
@@ -87,14 +101,7 @@ export const useCartStore = create((set, get) => ({
         set({ cart: [], startDate: "", endDate: "", selectedShop: null });
     },
 
-    // 🏬 Set selected shop for pickup (persisted)
-    setSelectedShop: (shopId) => {
-        if (!shopId) return;
-        localStorage.setItem("selectedShop", shopId);
-        set({ selectedShop: Number(shopId) });
-    },
-
-    // 📆 Set loan date range (persisted)
+    // 📆 Set Loan Date Range (persisted)
     setStartDate: (date) => {
         if (!date) return;
         localStorage.setItem("startDate", date);
@@ -111,12 +118,6 @@ export const useCartStore = create((set, get) => ({
             endDate: date,
             startDate: state.startDate && state.startDate > date ? date : state.startDate,
         }));
-    },
-
-    clearDates: () => {
-        localStorage.removeItem("startDate");
-        localStorage.removeItem("endDate");
-        set({ startDate: "", endDate: "" });
     },
 
     // ✅ Handle Checkout
@@ -141,7 +142,6 @@ export const useCartStore = create((set, get) => ({
             return false;
         }
 
-        // ✅ Save loan in Zustand
         const newLoan = {
             loan_id: Date.now(),
             user_id: authUser.user_id,
@@ -152,7 +152,6 @@ export const useCartStore = create((set, get) => ({
             status: "Pending",
         };
 
-        // Check if `add` function exists before calling it
         const loansStore = useLoansStore.getState();
         if (typeof loansStore.add === "function") {
             loansStore.add(newLoan);
@@ -161,9 +160,7 @@ export const useCartStore = create((set, get) => ({
             console.error("useLoansStore.add function is missing!");
         }
 
-        // ✅ Clear cart, dates, and shop selection
         get().clearCart();
-
-        return newLoan; // Return new loan if needed
+        return newLoan;
     },
 }));

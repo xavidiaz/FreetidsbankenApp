@@ -16,9 +16,11 @@ export const useAuthStore = create((set, get) => ({
         return false; // Invalid email
     },
 
-    logout: () => {
+    logout: (navigate) => {
         set({ authUser: null });
         localStorage.removeItem("authUser"); // Clear session
+        navigate("/"); // ✅ Redirect to home page
+
     },
 
     isAuthenticated: () => !!get().authUser, // Check if a user is logged in

@@ -1,12 +1,19 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { useLoansStore, useShopsStore, useItemsStore } from "@/store/useFreetidsbanken";
+import useLoanQRStore from "@/store/useLoanQRStore"; // ✅ Use Extended QR Store
+import { useShopsStore, useItemsStore } from "@/store/useFreetidsbanken";
 import { QRCodeSVG } from "qrcode.react";
 import SkeletonPlaceholder from "@/components/SkeletonPlaceholder";
+import Img from "@/components/Img";
+import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { AlertCircle, Calendar, Store, Download } from "lucide-react";
 
 const CheckoutSuccessPage = () => {
     const { loanId } = useParams();
-    const loansStore = useLoansStore();
+    const loansStore = useLoanQRStore(); // ✅ Use the extended store
     const shopsStore = useShopsStore();
     const itemsStore = useItemsStore();
 
@@ -22,12 +29,12 @@ const CheckoutSuccessPage = () => {
                 setLoan(fetchedLoan);
                 setShop(shopsStore.getById(fetchedLoan.shop_id));
 
-                // Fetch loaned items with details
+                // ✅ Fetch loaned items with details
                 const items = fetchedLoan.item_id.map((itemId) => itemsStore.getById(itemId)).filter(Boolean);
                 setLoanedItems(items);
             }
             setIsLoading(false);
-        }, 500); // Adjust delay if needed
+        }, 500);
 
         return () => clearTimeout(timer);
     }, [loanId, loansStore, shopsStore, itemsStore]);
@@ -37,49 +44,136 @@ const CheckoutSuccessPage = () => {
     }
 
     if (!loan) {
-        return <h1>Loan not found</h1>;
+        return (
+            <Card className="w-full max-w-md mx-auto mt-10 text-center">
+                <CardHeader>
+                    <AlertCircle className="text-destructive w-8 h-8 mx-auto" />
+                    <CardTitle>Loan Not Found</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-muted-foreground">The requested loan could not be found.</p>
+                    <Button asChild className="mt-4">
+                        <Link to="/">Go Back</Link>
+                    </Button>
+                </CardContent>
+            </Card>
+        );
     }
 
-    // ✅ Format loan details as text for QR Code
-    const qrValue = JSON.stringify({
-        loan_id: loan.loan_id,
-        user_id: loan.user_id,
-        shop: shop ? shop.name : "Unknown Shop",
-        date_start: loan.date_start,
-        date_end: loan.date_end,
-        items: loan.item_id, // List of item IDs
-    });
+    // ✅ Retrieve the stored QR Code
+    const qrValue = loansStore.getLoanQR(loan.loan_id);
+
+    // ✅ Function to download QR Code
+    const downloadQRCode = () => {
+        const canvas = document.createElement("canvas");
+        const svg = document.querySelector("svg");
+        const img = new Image();
+
+        img.src = `data:image/svg+xml;base64,${btoa(new XMLSerializer().serializeToString(svg))}`;
+        img.onload = () => {
+            canvas.width = 200;
+            canvas.height = 200;
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0);
+            const link = document.createElement("a");
+            link.download = `loan_${loan.loan_id}_qr.png`;
+            link.href = canvas.toDataURL("image/png");
+            link.click();
+        };
+    };
 
     return (
-        <div>
-            <h1>🎉 Checkout Complete!</h1>
-            <p>Your loan request has been submitted successfully.</p>
+        <div className="max-w-3xl mx-auto p-6 space-y-6">
+            {/* ✅ Success Message */}
+            <Card>
+                <CardHeader className="text-center">
+                    <CardTitle className="text-2xl font-bold text-primary">🎉 Checkout Complete!</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                    <p className="text-muted-foreground">
+                        Your loan request has been submitted successfully. Below are your loan details.
+                    </p>
+                </CardContent>
+            </Card>
 
-            <h2>Loan Details</h2>
-            <p><strong>Loan ID:</strong> {loan.loan_id}</p>
-            <p><strong>Pickup Location:</strong> {shop ? shop.name : "Unknown Shop"}</p>
-            <p><strong>Loan Period:</strong> {loan.date_start} to {loan.date_end}</p>
+            {/* ✅ Loan Details */}
+            <Card>
+                <CardHeader>
+                    <CardTitle>Loan Details</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="flex items-center gap-2">
+                            <Badge variant="outline">Loan ID</Badge>
+                            <span className="font-medium">{loan.loan_id}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <Store size={18} className="text-primary" />
+                            <span className="font-medium">{shop ? shop.name : "Unknown Shop"}</span>
+                        </div>
+                        <div className="flex items-center gap-2 col-span-2">
+                            <Calendar size={18} className="text-primary" />
+                            <span className="font-medium">
+                                {loan.date_start} → {loan.date_end}
+                            </span>
+                        </div>
+                    </div>
+                </CardContent>
+            </Card>
 
-            <h2>Loaned Items</h2>
-            <ul>
-                {loanedItems.length > 0 ? (
-                    loanedItems.map((item, index) => (
-                        <li key={index} className="flex items-center gap-4">
-                            <img src={item.thumbnail} alt={item.name} className="w-12 h-12 rounded-md" />
-                            <span><strong>{item.name}</strong></span>
-                            <span>Quantity: {item.quantity || 1}</span> {/* Default to 1 if missing */}
-                        </li>
-                    ))
-                ) : (
-                    <p>No items found.</p>
-                )}
-            </ul>
+            {/* ✅ Loaned Items Table */}
+            <Card>
+                <CardHeader>
+                    <CardTitle>Loaned Items</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    {loanedItems.length > 0 ? (
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>Item</TableHead>
+                                    <TableHead>Quantity</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {loanedItems.map((item, index) => (
+                                    <TableRow key={index}>
+                                        <TableCell className="flex items-center gap-3">
+                                            <Img src={item.thumbnail} alt={item.name} className="w-10 h-10 rounded-md" />
+                                            <span>{item.name}</span>
+                                        </TableCell>
+                                        <TableCell>{item.quantity || 1}</TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    ) : (
+                        <p className="text-muted-foreground text-center">No items found.</p>
+                    )}
+                </CardContent>
+            </Card>
 
-            <h2>📌 Scan this QR Code at the shop for pickup:</h2>
-            <QRCodeSVG value={qrValue} size={200} />
+            {/* ✅ QR Code Section */}
+            <Card className="text-center">
+                <CardHeader>
+                    <CardTitle>📌 Scan QR Code at the Shop</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <QRCodeSVG value={qrValue} size={200} className="mx-auto" />
+                    <div className="flex justify-center gap-4 mt-4">
+                        <Button onClick={downloadQRCode} className="flex items-center gap-2">
+                            <Download size={16} /> Download QR
+                        </Button>
+                    </div>
+                </CardContent>
+            </Card>
 
-            <br />
-            <Link to="/loans">View My Loans</Link>
+            {/* ✅ CTA Button */}
+            <div className="flex justify-center">
+                <Button asChild>
+                    <Link to="/loans">View My Loans</Link>
+                </Button>
+            </div>
         </div>
     );
 };

@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useItemsStore, useReviewsStore, useShopsStore, useCategoriesStore } from "@/store/useFreetidsbanken";
+import DetailLayout from "@/Layouts/DetailLayout";
 import ReviewFormComponent from "@/components/ReviewFormComponent";
 import AddToCartButton from "@/components/AddToCartButton";
-import SkeletonPlaceholder from "@/components/SkeletonPlaceholder";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Img from "@/components/Img";
 
 const ItemDetailPage = () => {
     const { id } = useParams();
@@ -12,91 +18,81 @@ const ItemDetailPage = () => {
     const shopsStore = useShopsStore();
     const categoriesStore = useCategoriesStore();
 
-    // 🔹 Local state for loading effect
     const [isLoading, setIsLoading] = useState(true);
     const [item, setItem] = useState(null);
 
     useEffect(() => {
-        // Simulate a short delay before loading the item
         const timer = setTimeout(() => {
             const fetchedItem = itemsStore.getById(Number(id));
             setItem(fetchedItem);
             setIsLoading(false);
-        }, 500); // Adjust delay time if needed
+        }, 500);
 
-        return () => clearTimeout(timer); // Cleanup function
+        return () => clearTimeout(timer);
     }, [id, itemsStore]);
 
-    // ✅ Show Skeleton While Data Loads
     if (isLoading || !item) {
-        return <SkeletonPlaceholder.Item />;
+        return <Skeleton className="h-40 w-full" />;
     }
 
     const shop = shopsStore.getById(item.shop_id);
     const category = categoriesStore.getById(item.category_id);
     const itemReviews = item.reviews.map((reviewId) => reviewsStore.getById(reviewId)).filter(Boolean);
-    const relatedItems = itemsStore.getAll().filter((i) => i.category_id === item.category_id && i.item_id !== item.item_id);
 
     return (
-        <div>
-            <h1>{item.name}</h1>
-            <img src={item.thumbnail} alt={item.name} width={200} />
-            <p><strong>Description:</strong> {item.description}</p>
-            <p><strong>Stock:</strong> {item.stock_quantity}</p>
-            <p><strong>Category:</strong> {category ? category.name : "Unknown Category"}</p>
-            <p><strong>Shop:</strong> {shop ? shop.name : "Unknown Shop"}</p>
+        <DetailLayout title={item.name}>
+            <div className="flex gap-6">
+                <Img src={item.thumbnail} alt={item.name} className="w-48 h-48 object-cover rounded-lg" />
+                <div className="flex flex-col space-y-3">
+                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <div className="flex items-center gap-2">
+                        <Badge>{category ? category.name : "Unknown Category"}</Badge>
+                        <Badge variant="secondary">{shop ? shop.name : "Unknown Shop"}</Badge>
+                    </div>
+                    <p><strong>Stock:</strong> {item.stock_quantity}</p>
+                    <Separator />
+                    <AddToCartButton item={item} />
+                </div>
+            </div>
+            <Separator />
 
-            <h2>Gallery</h2>
-            <div>
-                {item.gallery.map((image, index) => (
-                    <img key={index} src={image} alt={`Gallery ${index + 1}`} width={150} />
-                ))}
+            {/* Gallery Section */}
+            <div className="mt-4">
+                <div className="flex gap-2 overflow-x-auto">
+                    {item.gallery.map((image, index) => (
+                        <Img key={index} src={image} alt={`Gallery ${index + 1}`} className="w-24 h-24 object-cover rounded-md" />
+                    ))}
+                </div>
             </div>
 
-            <h2>Reserved Dates</h2>
-            {item.dates_reserved.length > 0 ? (
-                <ul>
-                    {item.dates_reserved.map((dates, index) => (
-                        <li key={index}>{dates[0]} to {dates[1]}</li>
-                    ))}
-                </ul>
-            ) : (
-                <p>No reservations.</p>
-            )}
+            {/* Reviews Section */}
+            <Card className="mt-4">
+                <CardContent>
+                    <h2 className="font-semibold">Reviews</h2>
+                    {itemReviews.length > 0 ? (
+                        <div className="space-y-4">
+                            {itemReviews.map((review) => (
+                                <div key={review.review_id} className="flex items-center gap-4">
+                                    <Avatar>
+                                        <AvatarFallback>U</AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <p className="text-sm"><strong>Rating:</strong> {review.rating} ⭐</p>
+                                        <p className="text-muted-foreground">{review.comment}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <p className="text-muted-foreground">No reviews yet.</p>
+                    )}
+                    <Separator className="my-3" />
+                    <ReviewFormComponent itemId={id} />
+                </CardContent>
+            </Card>
 
-            <h2>Add to Cart</h2>
-            <AddToCartButton item={item} />
 
-            <h2>Reviews</h2>
-            {itemReviews.length > 0 ? (
-                <ul>
-                    {itemReviews.map((review) => (
-                        <li key={review.review_id}>
-                            <strong>Rating:</strong> {review.rating} - {review.comment}
-                        </li>
-                    ))}
-                </ul>
-            ) : (
-                <p>No reviews yet.</p>
-            )}
-
-            {/* 🔹 Add Review Form */}
-            <ReviewFormComponent itemId={id} />
-
-            <h2>Similar Items</h2>
-            {relatedItems.length > 0 ? (
-                <ul>
-                    {relatedItems.map((relatedItem) => (
-                        <li key={relatedItem.item_id}>
-                            <img src={relatedItem.thumbnail} alt={relatedItem.name} width={50} height={50} />
-                            <Link to={`/items/${relatedItem.item_id}`}>{relatedItem.name}</Link>
-                        </li>
-                    ))}
-                </ul>
-            ) : (
-                <p>No related items found.</p>
-            )}
-        </div>
+        </DetailLayout>
     );
 };
 

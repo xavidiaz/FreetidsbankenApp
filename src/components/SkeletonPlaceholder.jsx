@@ -51,6 +51,15 @@ const SkeletonProfile = () => (
     </div>
 );
 
+const SkeletonNoItems = () => (
+    <div className="flex flex-col items-center justify-center p-6">
+        <Skeleton className="w-12 h-12 rounded-full mb-2" />
+        <Skeleton className="w-40 h-4 mb-2" />
+        <Skeleton className="w-24 h-4" />
+    </div>
+);
+
+
 // 🔹 Export all skeletons for easy usage
 export const SkeletonPlaceholder = {
     Item: SkeletonItem,
@@ -58,6 +67,7 @@ export const SkeletonPlaceholder = {
     CartItem: SkeletonCartItem,
     LoanDetails: SkeletonLoanDetails,
     Profile: SkeletonProfile,
+    NoItems: SkeletonNoItems,
 };
 
 export default SkeletonPlaceholder;

@@ -44,8 +44,13 @@ const CheckoutPage = () => {
     return (
         <div>
             <h1>Checkout</h1>
-            <p><strong>Pickup Shop:</strong> {cartStore.selectedShop}</p>
-            <p><strong>Loan Period:</strong> {cartStore.startDate} - {cartStore.endDate}</p>
+            <div>
+                <strong>Pickup Shop:</strong> <span>{cartStore.selectedShop}</span>
+            </div>
+            <div>
+                <strong>Loan Period:</strong> <span>{cartStore.startDate} - {cartStore.endDate}</span>
+            </div>
+
 
             <h2>Items in Cart</h2>
             <ul>

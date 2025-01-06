@@ -6,6 +6,12 @@ export default {
 	],
 	theme: {
 		extend: {
+			width: {
+				'screen': '100vw',
+			},
+			minHeight: {
+				'screen': '100vh',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -51,7 +57,10 @@ export default {
 					'3': 'hsl(var(--chart-3))',
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
-				}
+				},
+				toastBg: "hsl(220, 10%, 10%)",
+				toastSuccess: "hsl(145, 63%, 42%)",
+				toastDestructive: "hsl(0, 84%, 50%)",
 			}
 		}
 	},
