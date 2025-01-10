@@ -561,9 +561,10 @@
             "category_id": 8,
             "stock_quantity": 18,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "https://images.pexels.com/photos/4995/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "https://images.pexels.com/photos/2908/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3795/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -575,9 +576,10 @@
             "category_id": 5,
             "stock_quantity": 12,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "https://images.pexels.com/photos/8270/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "https://images.pexels.com/photos/2420/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4525/pexels-photo.jpg"
             ],
             "reviews": [
                 53
@@ -591,9 +593,10 @@
             "category_id": 8,
             "stock_quantity": 16,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "https://images.pexels.com/photos/1442/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "https://images.pexels.com/photos/6217/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4152/pexels-photo.jpg"
             ],
             "reviews": [
                 55
@@ -607,9 +610,10 @@
             "category_id": 5,
             "stock_quantity": 13,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "https://images.pexels.com/photos/2189/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "https://images.pexels.com/photos/7676/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8670/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -621,9 +625,10 @@
             "category_id": 7,
             "stock_quantity": 7,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/3806/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/6610/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1123/pexels-photo.jpg"
             ],
             "reviews": [
                 9
@@ -637,9 +642,10 @@
             "category_id": 3,
             "stock_quantity": 13,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/2347/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/6829/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6993/pexels-photo.jpg"
             ],
             "reviews": [
                 69,
@@ -654,9 +660,10 @@
             "category_id": 3,
             "stock_quantity": 13,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/2208/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/6710/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1250/pexels-photo.jpg"
             ],
             "reviews": [
                 29,
@@ -672,9 +679,10 @@
             "category_id": 6,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/8873/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/3247/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7351/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -686,9 +694,10 @@
             "category_id": 4,
             "stock_quantity": 20,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "https://images.pexels.com/photos/3946/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "https://images.pexels.com/photos/2090/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2374/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -700,9 +709,10 @@
             "category_id": 2,
             "stock_quantity": 15,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "https://images.pexels.com/photos/1002/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "https://images.pexels.com/photos/4486/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7295/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -714,9 +724,10 @@
             "category_id": 4,
             "stock_quantity": 8,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "https://images.pexels.com/photos/6445/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "https://images.pexels.com/photos/4087/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5376/pexels-photo.jpg"
             ],
             "reviews": [
                 36
@@ -730,9 +741,10 @@
             "category_id": 4,
             "stock_quantity": 6,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "https://images.pexels.com/photos/1163/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "https://images.pexels.com/photos/1981/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8571/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -744,9 +756,10 @@
             "category_id": 8,
             "stock_quantity": 6,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "https://images.pexels.com/photos/5987/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "https://images.pexels.com/photos/8341/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7650/pexels-photo.jpg"
             ],
             "reviews": [
                 28,
@@ -762,9 +775,10 @@
             "category_id": 10,
             "stock_quantity": 11,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/4782/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/5780/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6400/pexels-photo.jpg"
             ],
             "reviews": [
                 43
@@ -778,9 +792,10 @@
             "category_id": 7,
             "stock_quantity": 7,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/3780/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/4762/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7781/pexels-photo.jpg"
             ],
             "reviews": [
                 68
@@ -794,9 +809,10 @@
             "category_id": 7,
             "stock_quantity": 10,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/9068/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/9249/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9973/pexels-photo.jpg"
             ],
             "reviews": [
                 51,
@@ -811,9 +827,10 @@
             "category_id": 7,
             "stock_quantity": 14,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/2828/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/7539/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6907/pexels-photo.jpg"
             ],
             "reviews": [
                 22
@@ -827,9 +844,10 @@
             "category_id": 10,
             "stock_quantity": 10,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/7522/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/2790/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9744/pexels-photo.jpg"
             ],
             "reviews": [
                 58
@@ -843,9 +861,10 @@
             "category_id": 2,
             "stock_quantity": 20,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "https://images.pexels.com/photos/7080/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "https://images.pexels.com/photos/7243/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5419/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -857,9 +876,10 @@
             "category_id": 10,
             "stock_quantity": 6,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/5143/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/9749/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7867/pexels-photo.jpg"
             ],
             "reviews": [
                 35
@@ -873,9 +893,10 @@
             "category_id": 6,
             "stock_quantity": 6,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/7744/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/6236/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2274/pexels-photo.jpg"
             ],
             "reviews": [
                 75
@@ -889,9 +910,10 @@
             "category_id": 1,
             "stock_quantity": 14,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/7129/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/4816/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2755/pexels-photo.jpg"
             ],
             "reviews": [
                 20,
@@ -906,9 +928,10 @@
             "category_id": 8,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "https://images.pexels.com/photos/1985/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "https://images.pexels.com/photos/4486/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9053/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -920,9 +943,10 @@
             "category_id": 7,
             "stock_quantity": 10,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/3614/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/1945/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3091/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -934,9 +958,10 @@
             "category_id": 4,
             "stock_quantity": 19,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "https://images.pexels.com/photos/3568/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "https://images.pexels.com/photos/7203/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7451/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -948,9 +973,10 @@
             "category_id": 10,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/7645/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/7169/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4769/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -962,9 +988,10 @@
             "category_id": 10,
             "stock_quantity": 9,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/4278/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/1533/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2458/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -976,9 +1003,10 @@
             "category_id": 8,
             "stock_quantity": 15,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "https://images.pexels.com/photos/7929/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "https://images.pexels.com/photos/5692/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6251/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -990,9 +1018,10 @@
             "category_id": 6,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/3367/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/6720/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7727/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1004,9 +1033,10 @@
             "category_id": 9,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "https://images.pexels.com/photos/9917/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "https://images.pexels.com/photos/4631/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9924/pexels-photo.jpg"
             ],
             "reviews": [
                 26
@@ -1020,9 +1050,10 @@
             "category_id": 4,
             "stock_quantity": 17,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "https://images.pexels.com/photos/1129/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "https://images.pexels.com/photos/7468/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5293/pexels-photo.jpg"
             ],
             "reviews": [
                 65
@@ -1036,9 +1067,10 @@
             "category_id": 3,
             "stock_quantity": 12,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/5757/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/7902/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3772/pexels-photo.jpg"
             ],
             "reviews": [
                 39
@@ -1052,9 +1084,10 @@
             "category_id": 7,
             "stock_quantity": 18,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/5100/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/6613/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9624/pexels-photo.jpg"
             ],
             "reviews": [
                 16,
@@ -1069,9 +1102,10 @@
             "category_id": 10,
             "stock_quantity": 5,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/5016/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/3443/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8091/pexels-photo.jpg"
             ],
             "reviews": [
                 71
@@ -1085,9 +1119,10 @@
             "category_id": 1,
             "stock_quantity": 8,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/5376/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/7542/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5415/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1099,9 +1134,10 @@
             "category_id": 6,
             "stock_quantity": 11,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/9728/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/8390/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2371/pexels-photo.jpg"
             ],
             "reviews": [
                 79
@@ -1115,9 +1151,10 @@
             "category_id": 3,
             "stock_quantity": 20,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/9268/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/3055/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1896/pexels-photo.jpg"
             ],
             "reviews": [
                 14,
@@ -1132,9 +1169,10 @@
             "category_id": 7,
             "stock_quantity": 16,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/7459/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/7516/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8036/pexels-photo.jpg"
             ],
             "reviews": [
                 31
@@ -1148,9 +1186,10 @@
             "category_id": 1,
             "stock_quantity": 12,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/8096/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/6524/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3692/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1162,9 +1201,10 @@
             "category_id": 5,
             "stock_quantity": 10,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "https://images.pexels.com/photos/5799/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "https://images.pexels.com/photos/6095/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9509/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1176,9 +1216,10 @@
             "category_id": 4,
             "stock_quantity": 7,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "https://images.pexels.com/photos/2152/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "https://images.pexels.com/photos/7279/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8231/pexels-photo.jpg"
             ],
             "reviews": [
                 88
@@ -1192,9 +1233,10 @@
             "category_id": 6,
             "stock_quantity": 11,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/7787/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/4548/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6320/pexels-photo.jpg"
             ],
             "reviews": [
                 33
@@ -1208,9 +1250,10 @@
             "category_id": 2,
             "stock_quantity": 13,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "https://images.pexels.com/photos/9280/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "https://images.pexels.com/photos/3893/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4007/pexels-photo.jpg"
             ],
             "reviews": [
                 45
@@ -1224,9 +1267,10 @@
             "category_id": 10,
             "stock_quantity": 19,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/5245/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/7003/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8256/pexels-photo.jpg"
             ],
             "reviews": [
                 11,
@@ -1241,9 +1285,10 @@
             "category_id": 9,
             "stock_quantity": 16,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "https://images.pexels.com/photos/7721/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "https://images.pexels.com/photos/9361/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4156/pexels-photo.jpg"
             ],
             "reviews": [
                 10
@@ -1257,9 +1302,10 @@
             "category_id": 5,
             "stock_quantity": 13,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "https://images.pexels.com/photos/3160/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "https://images.pexels.com/photos/7123/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2924/pexels-photo.jpg"
             ],
             "reviews": [
                 5,
@@ -1274,9 +1320,10 @@
             "category_id": 6,
             "stock_quantity": 18,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/6441/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/5099/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2773/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1288,9 +1335,10 @@
             "category_id": 3,
             "stock_quantity": 16,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/1270/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/6317/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4156/pexels-photo.jpg"
             ],
             "reviews": [
                 6,
@@ -1306,9 +1354,10 @@
             "category_id": 8,
             "stock_quantity": 18,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "https://images.pexels.com/photos/5471/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "https://images.pexels.com/photos/1308/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2012/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1320,9 +1369,10 @@
             "category_id": 10,
             "stock_quantity": 14,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/6009/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/2387/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7340/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1334,9 +1384,10 @@
             "category_id": 1,
             "stock_quantity": 15,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/3047/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/7943/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7628/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1348,9 +1399,10 @@
             "category_id": 7,
             "stock_quantity": 12,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/8292/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/3990/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6060/pexels-photo.jpg"
             ],
             "reviews": [
                 54,
@@ -1365,9 +1417,10 @@
             "category_id": 8,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "https://images.pexels.com/photos/6636/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "https://images.pexels.com/photos/3507/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9295/pexels-photo.jpg"
             ],
             "reviews": [
                 2,
@@ -1382,9 +1435,10 @@
             "category_id": 4,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "https://images.pexels.com/photos/7844/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "https://images.pexels.com/photos/5476/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6468/pexels-photo.jpg"
             ],
             "reviews": [
                 3,
@@ -1401,9 +1455,10 @@
             "category_id": 5,
             "stock_quantity": 7,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "https://images.pexels.com/photos/4779/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "https://images.pexels.com/photos/9234/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2671/pexels-photo.jpg"
             ],
             "reviews": [
                 4
@@ -1417,9 +1472,10 @@
             "category_id": 2,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "https://images.pexels.com/photos/7843/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "https://images.pexels.com/photos/7860/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1168/pexels-photo.jpg"
             ],
             "reviews": [
                 21,
@@ -1435,9 +1491,10 @@
             "category_id": 6,
             "stock_quantity": 17,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/1848/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/9097/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7320/pexels-photo.jpg"
             ],
             "reviews": [
                 81
@@ -1451,9 +1508,10 @@
             "category_id": 9,
             "stock_quantity": 16,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "https://images.pexels.com/photos/2887/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "https://images.pexels.com/photos/1159/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8976/pexels-photo.jpg"
             ],
             "reviews": [
                 19,
@@ -1468,9 +1526,10 @@
             "category_id": 3,
             "stock_quantity": 18,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/5229/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/9737/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3723/pexels-photo.jpg"
             ],
             "reviews": [
                 70
@@ -1484,9 +1543,10 @@
             "category_id": 10,
             "stock_quantity": 15,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/2354/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/2518/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2067/pexels-photo.jpg"
             ],
             "reviews": [
                 44,
@@ -1501,9 +1561,10 @@
             "category_id": 1,
             "stock_quantity": 5,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/3892/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/7332/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5036/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1515,9 +1576,10 @@
             "category_id": 7,
             "stock_quantity": 19,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/7423/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/3094/pexels-photo.jpg",
+                "https://images.pexels.com/photos/7479/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1529,9 +1591,10 @@
             "category_id": 7,
             "stock_quantity": 11,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/5990/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/8773/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2193/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1543,9 +1606,10 @@
             "category_id": 9,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "https://images.pexels.com/photos/6532/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "https://images.pexels.com/photos/3967/pexels-photo.jpg",
+                "https://images.pexels.com/photos/8771/pexels-photo.jpg"
             ],
             "reviews": [
                 40
@@ -1559,9 +1623,10 @@
             "category_id": 6,
             "stock_quantity": 16,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/6227/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/5074/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2899/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1573,9 +1638,10 @@
             "category_id": 3,
             "stock_quantity": 19,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/9016/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/2995/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3781/pexels-photo.jpg"
             ],
             "reviews": [
                 90
@@ -1589,9 +1655,10 @@
             "category_id": 6,
             "stock_quantity": 15,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/8760/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/9618/pexels-photo.jpg",
+                "https://images.pexels.com/photos/9594/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1603,9 +1670,10 @@
             "category_id": 6,
             "stock_quantity": 11,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/5050/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/8857/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1516/pexels-photo.jpg"
             ],
             "reviews": [
                 63
@@ -1619,9 +1687,10 @@
             "category_id": 7,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/4407/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/7075/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1625/pexels-photo.jpg"
             ],
             "reviews": [
                 1,
@@ -1636,9 +1705,10 @@
             "category_id": 7,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/5894/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/2300/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1881/pexels-photo.jpg"
             ],
             "reviews": [
                 41
@@ -1652,9 +1722,10 @@
             "category_id": 1,
             "stock_quantity": 18,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/1484/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/7539/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1992/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1666,9 +1737,10 @@
             "category_id": 5,
             "stock_quantity": 16,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "https://images.pexels.com/photos/4160/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "https://images.pexels.com/photos/7932/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5369/pexels-photo.jpg"
             ],
             "reviews": [
                 62
@@ -1682,9 +1754,10 @@
             "category_id": 6,
             "stock_quantity": 11,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/5215/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/8225/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6766/pexels-photo.jpg"
             ],
             "reviews": [
                 15
@@ -1698,9 +1771,10 @@
             "category_id": 3,
             "stock_quantity": 18,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/8240/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/4429/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3240/pexels-photo.jpg"
             ],
             "reviews": [
                 25
@@ -1714,9 +1788,10 @@
             "category_id": 1,
             "stock_quantity": 7,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/3149/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/3699/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2799/pexels-photo.jpg"
             ],
             "reviews": [
                 47,
@@ -1732,9 +1807,10 @@
             "category_id": 9,
             "stock_quantity": 17,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "https://images.pexels.com/photos/5867/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "https://images.pexels.com/photos/7397/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2494/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1746,9 +1822,10 @@
             "category_id": 7,
             "stock_quantity": 13,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "https://images.pexels.com/photos/8807/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "https://images.pexels.com/photos/3177/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1371/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1760,9 +1837,10 @@
             "category_id": 9,
             "stock_quantity": 20,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "https://images.pexels.com/photos/8849/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "https://images.pexels.com/photos/3106/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1044/pexels-photo.jpg"
             ],
             "reviews": [
                 37,
@@ -1777,9 +1855,10 @@
             "category_id": 1,
             "stock_quantity": 12,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/4254/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/1661/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6215/pexels-photo.jpg"
             ],
             "reviews": [
                 49,
@@ -1794,9 +1873,10 @@
             "category_id": 9,
             "stock_quantity": 10,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "https://images.pexels.com/photos/7391/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "https://images.pexels.com/photos/8247/pexels-photo.jpg",
+                "https://images.pexels.com/photos/4523/pexels-photo.jpg"
             ],
             "reviews": [
                 34,
@@ -1813,9 +1893,10 @@
             "category_id": 1,
             "stock_quantity": 9,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/3242/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/1128/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2788/pexels-photo.jpg"
             ],
             "reviews": [
                 17,
@@ -1830,9 +1911,10 @@
             "category_id": 6,
             "stock_quantity": 20,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/8957/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/3313/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2587/pexels-photo.jpg"
             ],
             "reviews": [
                 38
@@ -1846,9 +1928,10 @@
             "category_id": 2,
             "stock_quantity": 17,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "https://images.pexels.com/photos/3899/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "https://images.pexels.com/photos/2629/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5661/pexels-photo.jpg"
             ],
             "reviews": [
                 27,
@@ -1863,9 +1946,10 @@
             "category_id": 4,
             "stock_quantity": 10,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "https://images.pexels.com/photos/1098/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "https://images.pexels.com/photos/8071/pexels-photo.jpg",
+                "https://images.pexels.com/photos/5945/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1877,9 +1961,10 @@
             "category_id": 3,
             "stock_quantity": 9,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/3357/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/6981/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3764/pexels-photo.jpg"
             ],
             "reviews": [
                 30
@@ -1893,9 +1978,10 @@
             "category_id": 3,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/9256/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "https://images.pexels.com/photos/9391/pexels-photo.jpg",
+                "https://images.pexels.com/photos/1000/pexels-photo.jpg"
             ],
             "reviews": [
                 60
@@ -1909,9 +1995,10 @@
             "category_id": 1,
             "stock_quantity": 8,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/7487/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/1219/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6155/pexels-photo.jpg"
             ],
             "reviews": [
                 24
@@ -1925,9 +2012,10 @@
             "category_id": 1,
             "stock_quantity": 13,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "https://images.pexels.com/photos/1668/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "https://images.pexels.com/photos/8223/pexels-photo.jpg",
+                "https://images.pexels.com/photos/3914/pexels-photo.jpg"
             ],
             "reviews": [
                 8
@@ -1941,9 +2029,10 @@
             "category_id": 10,
             "stock_quantity": 19,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "https://images.pexels.com/photos/7052/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "https://images.pexels.com/photos/9456/pexels-photo.jpg",
+                "https://images.pexels.com/photos/2944/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1955,9 +2044,10 @@
             "category_id": 6,
             "stock_quantity": 15,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "https://images.pexels.com/photos/7041/pexels-photo.jpg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "https://images.pexels.com/photos/1233/pexels-photo.jpg",
+                "https://images.pexels.com/photos/6933/pexels-photo.jpg"
             ],
             "reviews": [],
             "dates_reserved": []
