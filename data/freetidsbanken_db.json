@@ -561,9 +561,9 @@
             "category_id": 8,
             "stock_quantity": 18,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -575,9 +575,9 @@
             "category_id": 5,
             "stock_quantity": 12,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
             ],
             "reviews": [
                 53
@@ -591,9 +591,9 @@
             "category_id": 8,
             "stock_quantity": 16,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
             ],
             "reviews": [
                 55
@@ -607,9 +607,9 @@
             "category_id": 5,
             "stock_quantity": 13,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -621,9 +621,9 @@
             "category_id": 7,
             "stock_quantity": 7,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [
                 9
@@ -637,9 +637,9 @@
             "category_id": 3,
             "stock_quantity": 13,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 69,
@@ -654,9 +654,9 @@
             "category_id": 3,
             "stock_quantity": 13,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 29,
@@ -672,9 +672,9 @@
             "category_id": 6,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -686,9 +686,9 @@
             "category_id": 4,
             "stock_quantity": 20,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "../thumbnails/running_shoes_or_a_stopwatch.svg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "../thumbnails/running_shoes_or_a_stopwatch.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -700,9 +700,9 @@
             "category_id": 2,
             "stock_quantity": 15,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -714,9 +714,9 @@
             "category_id": 4,
             "stock_quantity": 8,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "../thumbnails/running_shoes_or_a_stopwatch.svg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "../thumbnails/running_shoes_or_a_stopwatch.svg"
             ],
             "reviews": [
                 36
@@ -730,9 +730,9 @@
             "category_id": 4,
             "stock_quantity": 6,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "../thumbnails/running_shoes_or_a_stopwatch.svg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "../thumbnails/running_shoes_or_a_stopwatch.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -744,9 +744,9 @@
             "category_id": 8,
             "stock_quantity": 6,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
             ],
             "reviews": [
                 28,
@@ -762,9 +762,9 @@
             "category_id": 10,
             "stock_quantity": 11,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [
                 43
@@ -778,9 +778,9 @@
             "category_id": 7,
             "stock_quantity": 7,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [
                 68
@@ -794,9 +794,9 @@
             "category_id": 7,
             "stock_quantity": 10,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [
                 51,
@@ -811,9 +811,9 @@
             "category_id": 7,
             "stock_quantity": 14,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [
                 22
@@ -827,9 +827,9 @@
             "category_id": 10,
             "stock_quantity": 10,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [
                 58
@@ -843,9 +843,9 @@
             "category_id": 2,
             "stock_quantity": 20,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -857,9 +857,9 @@
             "category_id": 10,
             "stock_quantity": 6,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [
                 35
@@ -873,9 +873,9 @@
             "category_id": 6,
             "stock_quantity": 6,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [
                 75
@@ -889,9 +889,9 @@
             "category_id": 1,
             "stock_quantity": 14,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [
                 20,
@@ -906,9 +906,9 @@
             "category_id": 8,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -920,9 +920,9 @@
             "category_id": 7,
             "stock_quantity": 10,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -934,9 +934,9 @@
             "category_id": 4,
             "stock_quantity": 19,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "../thumbnails/running_shoes_or_a_stopwatch.svg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "../thumbnails/running_shoes_or_a_stopwatch.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -948,9 +948,9 @@
             "category_id": 10,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -962,9 +962,9 @@
             "category_id": 10,
             "stock_quantity": 9,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -976,9 +976,9 @@
             "category_id": 8,
             "stock_quantity": 15,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -990,9 +990,9 @@
             "category_id": 6,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1004,9 +1004,9 @@
             "category_id": 9,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
             ],
             "reviews": [
                 26
@@ -1020,9 +1020,9 @@
             "category_id": 4,
             "stock_quantity": 17,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "../thumbnails/running_shoes_or_a_stopwatch.svg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "../thumbnails/running_shoes_or_a_stopwatch.svg"
             ],
             "reviews": [
                 65
@@ -1036,9 +1036,9 @@
             "category_id": 3,
             "stock_quantity": 12,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 39
@@ -1052,9 +1052,9 @@
             "category_id": 7,
             "stock_quantity": 18,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [
                 16,
@@ -1069,9 +1069,9 @@
             "category_id": 10,
             "stock_quantity": 5,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [
                 71
@@ -1085,9 +1085,9 @@
             "category_id": 1,
             "stock_quantity": 8,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1099,9 +1099,9 @@
             "category_id": 6,
             "stock_quantity": 11,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [
                 79
@@ -1115,9 +1115,9 @@
             "category_id": 3,
             "stock_quantity": 20,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 14,
@@ -1132,9 +1132,9 @@
             "category_id": 7,
             "stock_quantity": 16,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [
                 31
@@ -1148,9 +1148,9 @@
             "category_id": 1,
             "stock_quantity": 12,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1162,9 +1162,9 @@
             "category_id": 5,
             "stock_quantity": 10,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1176,9 +1176,9 @@
             "category_id": 4,
             "stock_quantity": 7,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "../thumbnails/running_shoes_or_a_stopwatch.svg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "../thumbnails/running_shoes_or_a_stopwatch.svg"
             ],
             "reviews": [
                 88
@@ -1192,9 +1192,9 @@
             "category_id": 6,
             "stock_quantity": 11,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [
                 33
@@ -1208,9 +1208,9 @@
             "category_id": 2,
             "stock_quantity": 13,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
             ],
             "reviews": [
                 45
@@ -1224,9 +1224,9 @@
             "category_id": 10,
             "stock_quantity": 19,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [
                 11,
@@ -1241,9 +1241,9 @@
             "category_id": 9,
             "stock_quantity": 16,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
             ],
             "reviews": [
                 10
@@ -1257,9 +1257,9 @@
             "category_id": 5,
             "stock_quantity": 13,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
             ],
             "reviews": [
                 5,
@@ -1274,9 +1274,9 @@
             "category_id": 6,
             "stock_quantity": 18,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1288,9 +1288,9 @@
             "category_id": 3,
             "stock_quantity": 16,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 6,
@@ -1306,9 +1306,9 @@
             "category_id": 8,
             "stock_quantity": 18,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1320,9 +1320,9 @@
             "category_id": 10,
             "stock_quantity": 14,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1334,9 +1334,9 @@
             "category_id": 1,
             "stock_quantity": 15,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1348,9 +1348,9 @@
             "category_id": 7,
             "stock_quantity": 12,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [
                 54,
@@ -1365,9 +1365,9 @@
             "category_id": 8,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
+            "thumbnail": "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg",
             "gallery": [
-                "../public/thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
+                "../thumbnails/skiing_equipment-such_as_ski_boots_or_skis.svg"
             ],
             "reviews": [
                 2,
@@ -1382,9 +1382,9 @@
             "category_id": 4,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "../thumbnails/running_shoes_or_a_stopwatch.svg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "../thumbnails/running_shoes_or_a_stopwatch.svg"
             ],
             "reviews": [
                 3,
@@ -1401,9 +1401,9 @@
             "category_id": 5,
             "stock_quantity": 7,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
             ],
             "reviews": [
                 4
@@ -1417,9 +1417,9 @@
             "category_id": 2,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
             ],
             "reviews": [
                 21,
@@ -1435,9 +1435,9 @@
             "category_id": 6,
             "stock_quantity": 17,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [
                 81
@@ -1451,9 +1451,9 @@
             "category_id": 9,
             "stock_quantity": 16,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
             ],
             "reviews": [
                 19,
@@ -1468,9 +1468,9 @@
             "category_id": 3,
             "stock_quantity": 18,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 70
@@ -1484,9 +1484,9 @@
             "category_id": 10,
             "stock_quantity": 15,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [
                 44,
@@ -1501,9 +1501,9 @@
             "category_id": 1,
             "stock_quantity": 5,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1515,9 +1515,9 @@
             "category_id": 7,
             "stock_quantity": 19,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1529,9 +1529,9 @@
             "category_id": 7,
             "stock_quantity": 11,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1543,9 +1543,9 @@
             "category_id": 9,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
             ],
             "reviews": [
                 40
@@ -1559,9 +1559,9 @@
             "category_id": 6,
             "stock_quantity": 16,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1573,9 +1573,9 @@
             "category_id": 3,
             "stock_quantity": 19,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 90
@@ -1589,9 +1589,9 @@
             "category_id": 6,
             "stock_quantity": 15,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1603,9 +1603,9 @@
             "category_id": 6,
             "stock_quantity": 11,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [
                 63
@@ -1619,9 +1619,9 @@
             "category_id": 7,
             "stock_quantity": 14,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [
                 1,
@@ -1636,9 +1636,9 @@
             "category_id": 7,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [
                 41
@@ -1652,9 +1652,9 @@
             "category_id": 1,
             "stock_quantity": 18,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1666,9 +1666,9 @@
             "category_id": 5,
             "stock_quantity": 16,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
+            "thumbnail": "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg",
             "gallery": [
-                "../public/thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
+                "../thumbnails/cycling_equipment-such_as_a_road_bike_or_helmet.svg"
             ],
             "reviews": [
                 62
@@ -1682,9 +1682,9 @@
             "category_id": 6,
             "stock_quantity": 11,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [
                 15
@@ -1698,9 +1698,9 @@
             "category_id": 3,
             "stock_quantity": 18,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 25
@@ -1714,9 +1714,9 @@
             "category_id": 1,
             "stock_quantity": 7,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [
                 47,
@@ -1732,9 +1732,9 @@
             "category_id": 9,
             "stock_quantity": 17,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1746,9 +1746,9 @@
             "category_id": 7,
             "stock_quantity": 13,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
+            "thumbnail": "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg",
             "gallery": [
-                "../public/thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
+                "../thumbnails/swimming_equipment-such_as_swim_goggles_or_a_swim_cap.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1760,9 +1760,9 @@
             "category_id": 9,
             "stock_quantity": 20,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
             ],
             "reviews": [
                 37,
@@ -1777,9 +1777,9 @@
             "category_id": 1,
             "stock_quantity": 12,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [
                 49,
@@ -1794,9 +1794,9 @@
             "category_id": 9,
             "stock_quantity": 10,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
+            "thumbnail": "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg",
             "gallery": [
-                "../public/thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
+                "../thumbnails/badminton_equipment-such_as_a_badminton_racket_and_shuttlecock.svg"
             ],
             "reviews": [
                 34,
@@ -1813,9 +1813,9 @@
             "category_id": 1,
             "stock_quantity": 9,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [
                 17,
@@ -1830,9 +1830,9 @@
             "category_id": 6,
             "stock_quantity": 20,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [
                 38
@@ -1846,9 +1846,9 @@
             "category_id": 2,
             "stock_quantity": 17,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
+            "thumbnail": "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg",
             "gallery": [
-                "../public/thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
+                "../thumbnails/basketball_equipment-such_as_a_basketball_and_hoop.svg"
             ],
             "reviews": [
                 27,
@@ -1863,9 +1863,9 @@
             "category_id": 4,
             "stock_quantity": 10,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/running_shoes_or_a_stopwatch.svg",
+            "thumbnail": "../thumbnails/running_shoes_or_a_stopwatch.svg",
             "gallery": [
-                "../public/thumbnails/running_shoes_or_a_stopwatch.svg"
+                "../thumbnails/running_shoes_or_a_stopwatch.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1877,9 +1877,9 @@
             "category_id": 3,
             "stock_quantity": 9,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 30
@@ -1893,9 +1893,9 @@
             "category_id": 3,
             "stock_quantity": 19,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
+            "thumbnail": "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
+                "../thumbnails/tennis_equipment-such_as_a_tennis_racket_and_ball.svg"
             ],
             "reviews": [
                 60
@@ -1909,9 +1909,9 @@
             "category_id": 1,
             "stock_quantity": 8,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [
                 24
@@ -1925,9 +1925,9 @@
             "category_id": 1,
             "stock_quantity": 13,
             "shop_id": 1,
-            "thumbnail": "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
+            "thumbnail": "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg",
             "gallery": [
-                "../public/thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
+                "../thumbnails/football_equipment_such_as_a_football_or_cleats.svg"
             ],
             "reviews": [
                 8
@@ -1941,9 +1941,9 @@
             "category_id": 10,
             "stock_quantity": 19,
             "shop_id": 2,
-            "thumbnail": "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
+            "thumbnail": "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg",
             "gallery": [
-                "../public/thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
+                "../thumbnails/golf_equipment-such_as_a_golf_club_and_ball.svg"
             ],
             "reviews": [],
             "dates_reserved": []
@@ -1955,9 +1955,9 @@
             "category_id": 6,
             "stock_quantity": 15,
             "shop_id": 3,
-            "thumbnail": "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
+            "thumbnail": "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg",
             "gallery": [
-                "../public/thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
+                "../thumbnails/hiking_equipment-such_as_a_backpack_or_trekking_boots.svg"
             ],
             "reviews": [],
             "dates_reserved": []

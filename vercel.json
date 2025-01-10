@@ -1,7 +1,7 @@
 {
     "build": {
         "env": {
-            "NODE_ENV": "production"
+            "NODE_ENV": "development"
         }
     },
     "rewrites": [
@@ -10,10 +10,6 @@
             "destination": "/index.html"
         }
     ],
-    "staticFiles": {
-        "public": true
-    },
-    "devCommand": "vite dev --port 3000",
-    "buildCommand": "vite build",
-    "outputDirectory": "dist"
+    "devCommand": "vite --port 3000",
+    "buildCommand": "vite build"
 }
