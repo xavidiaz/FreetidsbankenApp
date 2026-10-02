@@ -1,83 +1,51 @@
-# Freetidsbanken App
+# Fritidsbanken App
 
-## 📌 Overview
-Freetidsbanken is a **loan management app** designed to handle reservations for users. It provides a streamlined interface to **browse, reserve, and manage loans** with features like **QR code check-ins, user authentication, and review system**.
+A prototype web app for [Fritidsbanken](https://www.fritidsbanken.se/), where people borrow sports and leisure equipment for free. Browse items by category, pick dates and a pickup shop, check out a loan and show a QR code at pickup.
 
-## 🛠️ Features
-- **User Authentication**: Users can sign in and manage their loans.
-- **Item Reservations**: Browse available items and make reservations.
-- **QR Code Check-In**: Generate QR codes for loan verification at stores.
-- **Loan Management**: View upcoming loans, update or cancel reservations.
-- **Review System**: Leave and manage reviews for loaned items.
-- **Store Management**: Check loaned items and pickup locations.
+**Live demo:** <https://freetidsbanken.lab.xavidiaz.com/> (click **Try the demo** on the login screen)
 
-## 🏗️ Tech Stack
-- **Frontend**: React (Vite) + Tailwind CSS + ShadCN UI
-- **State Management**: Zustand
-- **Routing**: React Router
-- **Database**: JSON Server (Mock API)
-- **QR Code Generation**: `qrcode.react`
+## Features
 
-## 🚀 Installation
-### 1️⃣ Clone the Repository
+- **Browse** items and categories, with filtering and related items
+- **Reserve**: add items to a cart, choose a date range and pickup shop, check out
+- **Loans**: see your loans and open a **QR code** for pickup
+- **Reviews**: leave, edit and delete reviews on items
+- **Accounts**: sign in or sign up with an email (no passwords; this is a prototype)
+
+## Demo data
+
+There is no backend. The app ships with mock data in `data/freetidsbanken_db.json` (users, shops, categories, items, reviews, loans), and changes such as new loans, reviews or sign-ups are kept in the browser's `localStorage`.
+
+Any seeded user can sign in by email: `user1@example.com` to `user30@example.com`.
+
+## Tech stack
+
+- React 19 + Vite
+- Tailwind CSS + shadcn/ui (Radix UI)
+- Zustand for state
+- React Router
+- React Hook Form + Zod for forms
+- `qrcode.react` for QR codes
+
+## Getting started
+
 ```sh
-git clone https://github.com/your-repo/freetidsbanken.git
-cd freetidsbanken
-```
-### 2️⃣ Install Dependencies
-Using **Bun** (preferred):
-```sh
-bun install
-```
-Or with npm:
-```sh
-npm install
-```
-### 3️⃣ Start the App
-Run both the frontend and JSON Server:
-```sh
-bun run dev  # Starts frontend
-bun run server  # Starts JSON Server
-```
-The app should now be running at **`http://localhost:5173/`**.
-
-## 📚 Usage Guide
-### 🔹 Reserving an Item
-1. Browse available items.
-2. Click **Reserve** to add an item to your loan list.
-3. View loan details and **confirm reservation**.
-
-### 🔹 Managing Loans
-- **View loans** on the **Loans Page**.
-- Click **Show QR** to generate a **QR code** for pickup.
-- Modify or cancel loans before the pickup date.
-
-### 🔹 Reviewing Items
-- Navigate to an item and **leave a review**.
-- Edit or delete **your own reviews**.
-
-## 🔧 Configuration
-### 🔹 Changing API Endpoints
-Modify `json-server.json` to update mock API routes.
-
-### 🔹 Updating Styles
-Global styles are located in `src/index.css`.
-
-## 🛠️ Development
-### Running Linting and Formatting
-```sh
-bun run lint  # ESLint
-bun run format  # Prettier
+git clone https://github.com/xavidiaz/FreetidsbankenApp.git
+cd FreetidsbankenApp
+bun install        # or: npm install
+bun run dev        # http://localhost:3000
 ```
 
-### Running Tests
+Other scripts:
+
 ```sh
-bun run test
+bun run build      # production build in dist/
+bun run preview    # serve the build locally
+bun run lint       # ESLint
 ```
 
-## 📜 License
-MIT License. See `LICENSE` for details.
+## Deployment
 
-## 💬 Feedback & Contributions
-Feel free to open **issues** or submit **PRs** to improve the app! 🚀
+Every push to `main` runs a GitHub Actions workflow (`.github/workflows/publish.yml`) that builds an arm64 Docker image and pushes it to `ghcr.io/xavidiaz/freetidsbanken`. The image is a static build served by unprivileged nginx (`nginx.conf`, with a fallback to `index.html` for client-side routes).
 
+My home server (a Raspberry Pi running NixOS) checks for a new image every few minutes and restarts the app with it, so the live demo updates on its own a few minutes after a push.
