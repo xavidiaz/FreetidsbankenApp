@@ -16,6 +16,9 @@ const loginSchema = z.object({
     email: z.string().email({ message: "Invalid email format" }),
 });
 
+// ✅ Seeded user (data/freetidsbanken_db.json) for visitors of the live demo
+const DEMO_EMAIL = "user1@example.com";
+
 const LoginPage = ({ closeDialog }) => {
     const login = useAuthStore((state) => state.login);
     const { toast } = useToast();
@@ -76,6 +79,21 @@ const LoginPage = ({ closeDialog }) => {
                         <Button type="submit" className="w-full">
                             Login
                         </Button>
+
+                        {/* 🔹 Demo login: the seeded users have no passwords */}
+                        <div className="flex flex-col gap-2">
+                            <Button
+                                type="button"
+                                variant="outline"
+                                className="w-full"
+                                onClick={() => handleLogin({ email: DEMO_EMAIL })}
+                            >
+                                Try the demo
+                            </Button>
+                            <p className="text-center text-xs text-muted-foreground">
+                                Signs you in as {DEMO_EMAIL}
+                            </p>
+                        </div>
                     </form>
                 </Form>
                 {/* 🔹 Divider */}
